@@ -34,11 +34,12 @@
             this.lbDepartamento = new System.Windows.Forms.Label();
             this.txtDepartamento = new System.Windows.Forms.TextBox();
             this.btNovo = new System.Windows.Forms.Button();
-            this.btnSalvar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnLocalizar = new System.Windows.Forms.Button();
-            this.btnSair = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbIdEmpresa
@@ -72,66 +73,98 @@
             // 
             this.txtDepartamento.Location = new System.Drawing.Point(16, 106);
             this.txtDepartamento.Name = "txtDepartamento";
-            this.txtDepartamento.Size = new System.Drawing.Size(546, 20);
+            this.txtDepartamento.Size = new System.Drawing.Size(594, 20);
             this.txtDepartamento.TabIndex = 3;
             // 
             // btNovo
             // 
-            this.btNovo.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btNovo.BackColor = System.Drawing.Color.Honeydew;
             this.btNovo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btNovo.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
+            this.btNovo.FlatAppearance.BorderSize = 2;
+            this.btNovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btNovo.Image = ((System.Drawing.Image)(resources.GetObject("btNovo.Image")));
             this.btNovo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btNovo.Location = new System.Drawing.Point(16, 141);
             this.btNovo.Name = "btNovo";
-            this.btNovo.Size = new System.Drawing.Size(86, 37);
+            this.btNovo.Size = new System.Drawing.Size(114, 37);
             this.btNovo.TabIndex = 4;
             this.btNovo.Text = "NOVO";
             this.btNovo.UseVisualStyleBackColor = false;
             // 
-            // btnSalvar
-            // 
-            this.btnSalvar.Location = new System.Drawing.Point(108, 141);
-            this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(86, 37);
-            this.btnSalvar.TabIndex = 5;
-            this.btnSalvar.Text = "SALVAR";
-            this.btnSalvar.UseVisualStyleBackColor = true;
-            // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(200, 141);
+            this.btnCancelar.BackColor = System.Drawing.Color.Honeydew;
+            this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
+            this.btnCancelar.FlatAppearance.BorderSize = 2;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
+            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelar.Location = new System.Drawing.Point(255, 141);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(86, 37);
+            this.btnCancelar.Size = new System.Drawing.Size(114, 37);
             this.btnCancelar.TabIndex = 6;
             this.btnCancelar.Text = "CANCELAR";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.UseVisualStyleBackColor = false;
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(292, 141);
+            this.btnExcluir.BackColor = System.Drawing.Color.Honeydew;
+            this.btnExcluir.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
+            this.btnExcluir.FlatAppearance.BorderSize = 2;
+            this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluir.Image")));
+            this.btnExcluir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExcluir.Location = new System.Drawing.Point(375, 141);
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(86, 37);
+            this.btnExcluir.Size = new System.Drawing.Size(114, 37);
             this.btnExcluir.TabIndex = 7;
             this.btnExcluir.Text = "EXCLUIR";
-            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.UseVisualStyleBackColor = false;
             // 
             // btnLocalizar
             // 
-            this.btnLocalizar.Location = new System.Drawing.Point(384, 141);
+            this.btnLocalizar.BackColor = System.Drawing.Color.Honeydew;
+            this.btnLocalizar.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
+            this.btnLocalizar.FlatAppearance.BorderSize = 2;
+            this.btnLocalizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLocalizar.Image = ((System.Drawing.Image)(resources.GetObject("btnLocalizar.Image")));
+            this.btnLocalizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLocalizar.Location = new System.Drawing.Point(496, 141);
             this.btnLocalizar.Name = "btnLocalizar";
-            this.btnLocalizar.Size = new System.Drawing.Size(86, 37);
+            this.btnLocalizar.Size = new System.Drawing.Size(114, 37);
             this.btnLocalizar.TabIndex = 8;
             this.btnLocalizar.Text = "LOCALIZAR";
-            this.btnLocalizar.UseVisualStyleBackColor = true;
+            this.btnLocalizar.UseVisualStyleBackColor = false;
             // 
-            // btnSair
+            // button1
             // 
-            this.btnSair.Location = new System.Drawing.Point(476, 141);
-            this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(86, 37);
-            this.btnSair.TabIndex = 9;
-            this.btnSair.Text = "SAIR";
-            this.btnSair.UseVisualStyleBackColor = true;
+            this.button1.Location = new System.Drawing.Point(292, 38);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Honeydew;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
+            this.button2.FlatAppearance.BorderSize = 2;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(135, 141);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(114, 37);
+            this.button2.TabIndex = 11;
+            this.button2.Text = "SALVAR";
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // FormDepartamento
             // 
@@ -139,12 +172,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(583, 203);
-            this.Controls.Add(this.btnSair);
+            this.ClientSize = new System.Drawing.Size(646, 203);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnLocalizar);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.btNovo);
             this.Controls.Add(this.txtDepartamento);
             this.Controls.Add(this.lbDepartamento);
@@ -167,11 +200,12 @@
         private System.Windows.Forms.Label lbDepartamento;
         private System.Windows.Forms.TextBox txtDepartamento;
         private System.Windows.Forms.Button btNovo;
-        private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Button btnLocalizar;
-        private System.Windows.Forms.Button btnSair;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Button button2;
     }
 }
 
