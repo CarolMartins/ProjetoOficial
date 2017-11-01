@@ -26,11 +26,17 @@ namespace Projeto
         {
 
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void btnCarregarImagem_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog1 = new OpenFileDialog();
-            openFileDialog1.ShowDialog();
+            ofdLogo.FileName = "";
+            ofdLogo.Title = "Selecione uma foto";
+            ofdLogo.Filter = "JPEG|*.JPG|PNG|*.png";
+            ofdLogo.ShowDialog();
+        }
+
+        private void ofdLogo_FileOk(object sender, CancelEventArgs e)
+        {
+            picLogo.Image = Image.FromFile(ofdLogo.FileName);
         }
     }
 }

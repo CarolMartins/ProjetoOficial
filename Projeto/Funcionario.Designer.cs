@@ -51,6 +51,10 @@
             this.label9 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.picLogo = new System.Windows.Forms.PictureBox();
+            this.btnCarregarImagem = new System.Windows.Forms.Button();
+            this.ofdLogo = new System.Windows.Forms.OpenFileDialog();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -74,7 +78,7 @@
             // 
             this.lblStatus.AutoSize = true;
             this.lblStatus.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStatus.Location = new System.Drawing.Point(279, 257);
+            this.lblStatus.Location = new System.Drawing.Point(17, 273);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(144, 19);
             this.lblStatus.TabIndex = 2;
@@ -84,7 +88,7 @@
             // 
             this.rdbAtivado.AutoSize = true;
             this.rdbAtivado.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbAtivado.Location = new System.Drawing.Point(283, 279);
+            this.rdbAtivado.Location = new System.Drawing.Point(21, 295);
             this.rdbAtivado.Name = "rdbAtivado";
             this.rdbAtivado.Size = new System.Drawing.Size(68, 20);
             this.rdbAtivado.TabIndex = 3;
@@ -97,7 +101,7 @@
             // 
             this.rdbDesativado.AutoSize = true;
             this.rdbDesativado.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbDesativado.Location = new System.Drawing.Point(375, 279);
+            this.rdbDesativado.Location = new System.Drawing.Point(113, 295);
             this.rdbDesativado.Name = "rdbDesativado";
             this.rdbDesativado.Size = new System.Drawing.Size(88, 20);
             this.rdbDesativado.TabIndex = 4;
@@ -126,7 +130,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(400, 55);
+            this.label3.Location = new System.Drawing.Point(12, 161);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(43, 19);
             this.label3.TabIndex = 7;
@@ -136,7 +140,7 @@
             // 
             this.rdbFeminino.AutoSize = true;
             this.rdbFeminino.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbFeminino.Location = new System.Drawing.Point(404, 78);
+            this.rdbFeminino.Location = new System.Drawing.Point(16, 184);
             this.rdbFeminino.Name = "rdbFeminino";
             this.rdbFeminino.Size = new System.Drawing.Size(78, 20);
             this.rdbFeminino.TabIndex = 8;
@@ -148,7 +152,7 @@
             // 
             this.rdbMasculino.AutoSize = true;
             this.rdbMasculino.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbMasculino.Location = new System.Drawing.Point(477, 77);
+            this.rdbMasculino.Location = new System.Drawing.Point(89, 183);
             this.rdbMasculino.Name = "rdbMasculino";
             this.rdbMasculino.Size = new System.Drawing.Size(82, 20);
             this.rdbMasculino.TabIndex = 9;
@@ -160,7 +164,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(555, 55);
+            this.label4.Location = new System.Drawing.Point(205, 161);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(128, 19);
             this.label4.TabIndex = 10;
@@ -170,7 +174,7 @@
             // 
             this.dateTimePicker1.CustomFormat = "";
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(559, 78);
+            this.dateTimePicker1.Location = new System.Drawing.Point(209, 184);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(136, 20);
             this.dateTimePicker1.TabIndex = 11;
@@ -229,7 +233,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(440, 135);
+            this.textBox3.Location = new System.Drawing.Point(20, 240);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(81, 20);
             this.textBox3.TabIndex = 19;
@@ -238,7 +242,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(437, 114);
+            this.label8.Location = new System.Drawing.Point(17, 219);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(49, 19);
             this.label8.TabIndex = 18;
@@ -248,7 +252,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(525, 113);
+            this.label9.Location = new System.Drawing.Point(105, 218);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(56, 19);
             this.label9.TabIndex = 20;
@@ -257,26 +261,52 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(531, 135);
+            this.comboBox1.Location = new System.Drawing.Point(111, 240);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(164, 21);
             this.comboBox1.TabIndex = 21;
             // 
             // groupBox1
             // 
-            this.groupBox1.Location = new System.Drawing.Point(19, 342);
+            this.groupBox1.Location = new System.Drawing.Point(231, 273);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(273, 42);
             this.groupBox1.TabIndex = 22;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
+            // picLogo
+            // 
+            this.picLogo.Location = new System.Drawing.Point(555, 24);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(128, 143);
+            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picLogo.TabIndex = 24;
+            this.picLogo.TabStop = false;
+            // 
+            // btnCarregarImagem
+            // 
+            this.btnCarregarImagem.Location = new System.Drawing.Point(567, 184);
+            this.btnCarregarImagem.Name = "btnCarregarImagem";
+            this.btnCarregarImagem.Size = new System.Drawing.Size(106, 38);
+            this.btnCarregarImagem.TabIndex = 23;
+            this.btnCarregarImagem.Text = "Carregar Imagem";
+            this.btnCarregarImagem.UseVisualStyleBackColor = true;
+            this.btnCarregarImagem.Click += new System.EventHandler(this.btnCarregarImagem_Click);
+            // 
+            // ofdLogo
+            // 
+            this.ofdLogo.FileName = "openFileDialog1";
+            this.ofdLogo.FileOk += new System.ComponentModel.CancelEventHandler(this.ofdLogo_FileOk);
+            // 
             // Funcionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
-            this.ClientSize = new System.Drawing.Size(715, 408);
+            this.ClientSize = new System.Drawing.Size(726, 335);
+            this.Controls.Add(this.picLogo);
+            this.Controls.Add(this.btnCarregarImagem);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label9);
@@ -305,6 +335,7 @@
             this.Name = "Funcionario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Funcionario";
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -335,5 +366,8 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.PictureBox picLogo;
+        private System.Windows.Forms.Button btnCarregarImagem;
+        private System.Windows.Forms.OpenFileDialog ofdLogo;
     }
 }
