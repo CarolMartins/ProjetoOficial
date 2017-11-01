@@ -50,7 +50,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.SuspendLayout();
             // 
             // label1
@@ -74,7 +74,7 @@
             // 
             this.lblStatus.AutoSize = true;
             this.lblStatus.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStatus.Location = new System.Drawing.Point(128, 9);
+            this.lblStatus.Location = new System.Drawing.Point(279, 257);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(144, 19);
             this.lblStatus.TabIndex = 2;
@@ -84,7 +84,7 @@
             // 
             this.rdbAtivado.AutoSize = true;
             this.rdbAtivado.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbAtivado.Location = new System.Drawing.Point(132, 31);
+            this.rdbAtivado.Location = new System.Drawing.Point(283, 279);
             this.rdbAtivado.Name = "rdbAtivado";
             this.rdbAtivado.Size = new System.Drawing.Size(68, 20);
             this.rdbAtivado.TabIndex = 3;
@@ -97,7 +97,7 @@
             // 
             this.rdbDesativado.AutoSize = true;
             this.rdbDesativado.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbDesativado.Location = new System.Drawing.Point(224, 31);
+            this.rdbDesativado.Location = new System.Drawing.Point(375, 279);
             this.rdbDesativado.Name = "rdbDesativado";
             this.rdbDesativado.Size = new System.Drawing.Size(88, 20);
             this.rdbDesativado.TabIndex = 4;
@@ -262,16 +262,22 @@
             this.comboBox1.Size = new System.Drawing.Size(164, 21);
             this.comboBox1.TabIndex = 21;
             // 
-            // openFileDialog1
+            // groupBox1
             // 
-            this.openFileDialog1.FileName = "foto";
-            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
+            this.groupBox1.Location = new System.Drawing.Point(19, 342);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(273, 42);
+            this.groupBox1.TabIndex = 22;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
             // 
             // Funcionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.MintCream;
             this.ClientSize = new System.Drawing.Size(715, 408);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.textBox3);
@@ -294,7 +300,10 @@
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.txtPis);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MinimizeBox = false;
             this.Name = "Funcionario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Funcionario";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -325,6 +334,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

@@ -114,63 +114,87 @@
             // 
             // btnSair
             // 
+            this.btnSair.BackColor = System.Drawing.Color.Honeydew;
+            this.btnSair.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
+            this.btnSair.FlatAppearance.BorderSize = 2;
+            this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSair.Location = new System.Drawing.Point(474, 141);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(86, 37);
             this.btnSair.TabIndex = 15;
             this.btnSair.Text = "SAIR";
-            this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.UseVisualStyleBackColor = false;
             // 
             // btnLocalizar
             // 
+            this.btnLocalizar.BackColor = System.Drawing.Color.Honeydew;
+            this.btnLocalizar.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
+            this.btnLocalizar.FlatAppearance.BorderSize = 2;
+            this.btnLocalizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLocalizar.Location = new System.Drawing.Point(382, 141);
             this.btnLocalizar.Name = "btnLocalizar";
             this.btnLocalizar.Size = new System.Drawing.Size(86, 37);
             this.btnLocalizar.TabIndex = 14;
             this.btnLocalizar.Text = "LOCALIZAR";
-            this.btnLocalizar.UseVisualStyleBackColor = true;
+            this.btnLocalizar.UseVisualStyleBackColor = false;
             // 
             // btnExcluir
             // 
+            this.btnExcluir.BackColor = System.Drawing.Color.Honeydew;
+            this.btnExcluir.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
+            this.btnExcluir.FlatAppearance.BorderSize = 2;
+            this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExcluir.Location = new System.Drawing.Point(290, 141);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(86, 37);
             this.btnExcluir.TabIndex = 13;
             this.btnExcluir.Text = "EXCLUIR";
-            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.UseVisualStyleBackColor = false;
             // 
             // btnCancelar
             // 
+            this.btnCancelar.BackColor = System.Drawing.Color.Honeydew;
+            this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
+            this.btnCancelar.FlatAppearance.BorderSize = 2;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Location = new System.Drawing.Point(198, 141);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(86, 37);
             this.btnCancelar.TabIndex = 12;
             this.btnCancelar.Text = "CANCELAR";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.UseVisualStyleBackColor = false;
             // 
             // btnSalvar
             // 
+            this.btnSalvar.BackColor = System.Drawing.Color.Honeydew;
+            this.btnSalvar.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
+            this.btnSalvar.FlatAppearance.BorderSize = 2;
+            this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalvar.Location = new System.Drawing.Point(106, 141);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(86, 37);
             this.btnSalvar.TabIndex = 11;
             this.btnSalvar.Text = "SALVAR";
-            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.UseVisualStyleBackColor = false;
             // 
             // btNovo
             // 
+            this.btNovo.BackColor = System.Drawing.Color.Honeydew;
+            this.btNovo.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
+            this.btNovo.FlatAppearance.BorderSize = 2;
+            this.btNovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btNovo.Location = new System.Drawing.Point(14, 141);
             this.btNovo.Name = "btNovo";
             this.btNovo.Size = new System.Drawing.Size(86, 37);
             this.btNovo.TabIndex = 10;
             this.btNovo.Text = "NOVO";
-            this.btNovo.UseVisualStyleBackColor = true;
+            this.btNovo.UseVisualStyleBackColor = false;
             // 
             // Empresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BackColor = System.Drawing.Color.MintCream;
             this.ClientSize = new System.Drawing.Size(583, 203);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnLocalizar);
@@ -186,7 +210,10 @@
             this.Controls.Add(this.lbRazaoSocial);
             this.Controls.Add(this.txtIdEmpresa);
             this.Controls.Add(this.lbIdEmpresa);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MinimizeBox = false;
             this.Name = "Empresa";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Empresa";
             this.ResumeLayout(false);
             this.PerformLayout();
