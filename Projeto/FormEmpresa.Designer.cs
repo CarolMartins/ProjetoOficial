@@ -1,6 +1,6 @@
 ﻿namespace Projeto
 {
-    partial class Empresa
+    partial class FormEmpresa
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEmpresa));
             this.lbIdEmpresa = new System.Windows.Forms.Label();
             this.txtIdEmpresa = new System.Windows.Forms.TextBox();
             this.lbRazaoSocial = new System.Windows.Forms.Label();
@@ -36,12 +37,11 @@
             this.txtNomeFantasia = new System.Windows.Forms.TextBox();
             this.lbCnpj = new System.Windows.Forms.Label();
             this.txtCnpj = new System.Windows.Forms.TextBox();
-            this.btnSair = new System.Windows.Forms.Button();
+            this.btnSalvar = new System.Windows.Forms.Button();
             this.btnLocalizar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnSalvar = new System.Windows.Forms.Button();
-            this.btNovo = new System.Windows.Forms.Button();
+            this.btnNovo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbIdEmpresa
@@ -60,6 +60,7 @@
             this.txtIdEmpresa.Name = "txtIdEmpresa";
             this.txtIdEmpresa.Size = new System.Drawing.Size(53, 20);
             this.txtIdEmpresa.TabIndex = 1;
+            this.txtIdEmpresa.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtIdEmpresa_KeyDown);
             // 
             // lbRazaoSocial
             // 
@@ -75,7 +76,7 @@
             // 
             this.txtRazaoSocial.Location = new System.Drawing.Point(79, 41);
             this.txtRazaoSocial.Name = "txtRazaoSocial";
-            this.txtRazaoSocial.Size = new System.Drawing.Size(482, 20);
+            this.txtRazaoSocial.Size = new System.Drawing.Size(532, 20);
             this.txtRazaoSocial.TabIndex = 3;
             // 
             // lbNomeFantasia
@@ -109,60 +110,8 @@
             // 
             this.txtCnpj.Location = new System.Drawing.Point(401, 97);
             this.txtCnpj.Name = "txtCnpj";
-            this.txtCnpj.Size = new System.Drawing.Size(161, 20);
+            this.txtCnpj.Size = new System.Drawing.Size(210, 20);
             this.txtCnpj.TabIndex = 7;
-            // 
-            // btnSair
-            // 
-            this.btnSair.BackColor = System.Drawing.Color.Honeydew;
-            this.btnSair.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
-            this.btnSair.FlatAppearance.BorderSize = 2;
-            this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSair.Location = new System.Drawing.Point(474, 141);
-            this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(86, 37);
-            this.btnSair.TabIndex = 15;
-            this.btnSair.Text = "SAIR";
-            this.btnSair.UseVisualStyleBackColor = false;
-            // 
-            // btnLocalizar
-            // 
-            this.btnLocalizar.BackColor = System.Drawing.Color.Honeydew;
-            this.btnLocalizar.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
-            this.btnLocalizar.FlatAppearance.BorderSize = 2;
-            this.btnLocalizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLocalizar.Location = new System.Drawing.Point(382, 141);
-            this.btnLocalizar.Name = "btnLocalizar";
-            this.btnLocalizar.Size = new System.Drawing.Size(86, 37);
-            this.btnLocalizar.TabIndex = 14;
-            this.btnLocalizar.Text = "LOCALIZAR";
-            this.btnLocalizar.UseVisualStyleBackColor = false;
-            // 
-            // btnExcluir
-            // 
-            this.btnExcluir.BackColor = System.Drawing.Color.Honeydew;
-            this.btnExcluir.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
-            this.btnExcluir.FlatAppearance.BorderSize = 2;
-            this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExcluir.Location = new System.Drawing.Point(290, 141);
-            this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(86, 37);
-            this.btnExcluir.TabIndex = 13;
-            this.btnExcluir.Text = "EXCLUIR";
-            this.btnExcluir.UseVisualStyleBackColor = false;
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.BackColor = System.Drawing.Color.Honeydew;
-            this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
-            this.btnCancelar.FlatAppearance.BorderSize = 2;
-            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Location = new System.Drawing.Point(198, 141);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(86, 37);
-            this.btnCancelar.TabIndex = 12;
-            this.btnCancelar.Text = "CANCELAR";
-            this.btnCancelar.UseVisualStyleBackColor = false;
             // 
             // btnSalvar
             // 
@@ -170,38 +119,92 @@
             this.btnSalvar.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
             this.btnSalvar.FlatAppearance.BorderSize = 2;
             this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalvar.Location = new System.Drawing.Point(106, 141);
+            this.btnSalvar.Image = ((System.Drawing.Image)(resources.GetObject("btnSalvar.Image")));
+            this.btnSalvar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSalvar.Location = new System.Drawing.Point(135, 135);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(86, 37);
-            this.btnSalvar.TabIndex = 11;
+            this.btnSalvar.Size = new System.Drawing.Size(114, 40);
+            this.btnSalvar.TabIndex = 25;
             this.btnSalvar.Text = "SALVAR";
             this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
-            // btNovo
+            // btnLocalizar
             // 
-            this.btNovo.BackColor = System.Drawing.Color.Honeydew;
-            this.btNovo.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
-            this.btNovo.FlatAppearance.BorderSize = 2;
-            this.btNovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btNovo.Location = new System.Drawing.Point(14, 141);
-            this.btNovo.Name = "btNovo";
-            this.btNovo.Size = new System.Drawing.Size(86, 37);
-            this.btNovo.TabIndex = 10;
-            this.btNovo.Text = "NOVO";
-            this.btNovo.UseVisualStyleBackColor = false;
+            this.btnLocalizar.BackColor = System.Drawing.Color.Honeydew;
+            this.btnLocalizar.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
+            this.btnLocalizar.FlatAppearance.BorderSize = 2;
+            this.btnLocalizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLocalizar.Image = ((System.Drawing.Image)(resources.GetObject("btnLocalizar.Image")));
+            this.btnLocalizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLocalizar.Location = new System.Drawing.Point(497, 135);
+            this.btnLocalizar.Name = "btnLocalizar";
+            this.btnLocalizar.Size = new System.Drawing.Size(114, 40);
+            this.btnLocalizar.TabIndex = 24;
+            this.btnLocalizar.Text = "LOCALIZAR";
+            this.btnLocalizar.UseVisualStyleBackColor = false;
+            this.btnLocalizar.Click += new System.EventHandler(this.btnLocalizar_Click);
             // 
-            // Empresa
+            // btnExcluir
+            // 
+            this.btnExcluir.BackColor = System.Drawing.Color.Honeydew;
+            this.btnExcluir.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
+            this.btnExcluir.FlatAppearance.BorderSize = 2;
+            this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluir.Image")));
+            this.btnExcluir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExcluir.Location = new System.Drawing.Point(376, 135);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(114, 40);
+            this.btnExcluir.TabIndex = 23;
+            this.btnExcluir.Text = "EXCLUIR";
+            this.btnExcluir.UseVisualStyleBackColor = false;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.BackColor = System.Drawing.Color.Honeydew;
+            this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
+            this.btnCancelar.FlatAppearance.BorderSize = 2;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
+            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelar.Location = new System.Drawing.Point(255, 135);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(114, 40);
+            this.btnCancelar.TabIndex = 22;
+            this.btnCancelar.Text = "CANCELAR";
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // btnNovo
+            // 
+            this.btnNovo.BackColor = System.Drawing.Color.Honeydew;
+            this.btnNovo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnNovo.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
+            this.btnNovo.FlatAppearance.BorderSize = 2;
+            this.btnNovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNovo.Image = ((System.Drawing.Image)(resources.GetObject("btnNovo.Image")));
+            this.btnNovo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNovo.Location = new System.Drawing.Point(16, 135);
+            this.btnNovo.Name = "btnNovo";
+            this.btnNovo.Size = new System.Drawing.Size(114, 40);
+            this.btnNovo.TabIndex = 21;
+            this.btnNovo.Text = "NOVO";
+            this.btnNovo.UseVisualStyleBackColor = false;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
+            // 
+            // FormEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
-            this.ClientSize = new System.Drawing.Size(583, 203);
-            this.Controls.Add(this.btnSair);
+            this.ClientSize = new System.Drawing.Size(624, 192);
+            this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.btnLocalizar);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.btnSalvar);
-            this.Controls.Add(this.btNovo);
+            this.Controls.Add(this.btnNovo);
             this.Controls.Add(this.txtCnpj);
             this.Controls.Add(this.lbCnpj);
             this.Controls.Add(this.txtNomeFantasia);
@@ -212,7 +215,7 @@
             this.Controls.Add(this.lbIdEmpresa);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MinimizeBox = false;
-            this.Name = "Empresa";
+            this.Name = "FormEmpresa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Empresa";
             this.ResumeLayout(false);
@@ -230,11 +233,10 @@
         private System.Windows.Forms.TextBox txtNomeFantasia;
         private System.Windows.Forms.Label lbCnpj;
         private System.Windows.Forms.TextBox txtCnpj;
-        private System.Windows.Forms.Button btnSair;
+        private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnLocalizar;
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Button btnSalvar;
-        private System.Windows.Forms.Button btNovo;
+        private System.Windows.Forms.Button btnNovo;
     }
 }

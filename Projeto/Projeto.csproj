@@ -32,8 +32,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,23 +54,143 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Departamento.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Banco.cs">
+      <DependentUpon>pontoModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Departamento.Designer.cs">
-      <DependentUpon>Departamento.cs</DependentUpon>
+    <Compile Include="Cidade.cs">
+      <DependentUpon>pontoModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Departamento.cs">
+      <DependentUpon>pontoModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Empresa.cs">
+      <DependentUpon>pontoModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Escolaridade.cs">
+      <DependentUpon>pontoModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Estado.cs">
+      <DependentUpon>pontoModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FormAbono.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Empresa.Designer.cs">
-      <DependentUpon>Empresa.cs</DependentUpon>
+    <Compile Include="FormAbono.Designer.cs">
+      <DependentUpon>FormAbono.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBanco.Designer.cs">
+      <DependentUpon>FormBanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDepartamento.Designer.cs">
+      <DependentUpon>FormDepartamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmpresa.Designer.cs">
+      <DependentUpon>FormEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEscolaridade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEscolaridade.Designer.cs">
+      <DependentUpon>FormEscolaridade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFuncao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFuncao.Designer.cs">
+      <DependentUpon>FormFuncao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFuncionario.Designer.cs">
+      <DependentUpon>FormFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormImportacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormImportacao.Designer.cs">
+      <DependentUpon>FormImportacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormJornada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormJornada.Designer.cs">
+      <DependentUpon>FormJornada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOcorrencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOcorrencia.Designer.cs">
+      <DependentUpon>FormOcorrencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUsuario.Designer.cs">
+      <DependentUpon>FormUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcao_Cargo.cs">
+      <DependentUpon>pontoModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Funcionario.cs">
+      <DependentUpon>pontoModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Importacao.cs">
+      <DependentUpon>pontoModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Jornada.cs">
+      <DependentUpon>pontoModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LocBanco.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Funcionario.Designer.cs">
-      <DependentUpon>Funcionario.cs</DependentUpon>
+    <Compile Include="LocBanco.Designer.cs">
+      <DependentUpon>LocBanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocDepartamento.Designer.cs">
+      <DependentUpon>LocDepartamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocEmpresa.Designer.cs">
+      <DependentUpon>LocEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocEscolaridade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocEscolaridade.Designer.cs">
+      <DependentUpon>LocEscolaridade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocFuncaoCargo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocFuncaoCargo.Designer.cs">
+      <DependentUpon>LocFuncaoCargo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocTipoAbono.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocTipoAbono.Designer.cs">
+      <DependentUpon>LocTipoAbono.cs</DependentUpon>
     </Compile>
     <Compile Include="MenuPrincipal.cs">
       <SubType>Form</SubType>
@@ -69,16 +198,82 @@
     <Compile Include="MenuPrincipal.Designer.cs">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="pontoModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pontoModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pontoModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pontoModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pontoModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pontoModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Departamento.resx">
-      <DependentUpon>Departamento.cs</DependentUpon>
+    <Compile Include="TipoAbono.cs">
+      <DependentUpon>pontoModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario.cs">
+      <DependentUpon>pontoModel.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormAbono.resx">
+      <DependentUpon>FormAbono.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Empresa.resx">
-      <DependentUpon>Empresa.cs</DependentUpon>
+    <EmbeddedResource Include="FormBanco.resx">
+      <DependentUpon>FormBanco.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Funcionario.resx">
-      <DependentUpon>Funcionario.cs</DependentUpon>
+    <EmbeddedResource Include="FormDepartamento.resx">
+      <DependentUpon>FormDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEmpresa.resx">
+      <DependentUpon>FormEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEscolaridade.resx">
+      <DependentUpon>FormEscolaridade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFuncao.resx">
+      <DependentUpon>FormFuncao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFuncionario.resx">
+      <DependentUpon>FormFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormImportacao.resx">
+      <DependentUpon>FormImportacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormJornada.resx">
+      <DependentUpon>FormJornada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOcorrencia.resx">
+      <DependentUpon>FormOcorrencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUsuario.resx">
+      <DependentUpon>FormUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocBanco.resx">
+      <DependentUpon>LocBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocDepartamento.resx">
+      <DependentUpon>LocDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocEmpresa.resx">
+      <DependentUpon>LocEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocEscolaridade.resx">
+      <DependentUpon>LocEscolaridade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocFuncaoCargo.resx">
+      <DependentUpon>LocFuncaoCargo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocTipoAbono.resx">
+      <DependentUpon>LocTipoAbono.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
@@ -92,6 +287,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EntityDeploy Include="pontoModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>pontoModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="packages.config" />
+    <None Include="pontoModel.edmx.diagram">
+      <DependentUpon>pontoModel.edmx</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -104,6 +307,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="pontoModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>pontoModel.Context.cs</LastGenOutput>
+      <DependentUpon>pontoModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="pontoModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>pontoModel.edmx</DependentUpon>
+      <LastGenOutput>pontoModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

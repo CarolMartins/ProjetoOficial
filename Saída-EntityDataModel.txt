@@ -1,0 +1,6 @@
+﻿Generated model file: pontoModel.edmx.
+Loading metadata from the database took 00:00:01.0997487.
+Generating the model took 00:00:05.1172788.
+Generated model file: pontoModel.edmx.
+Loading metadata from the database took 00:00:00.8257666.
+Generating the model took 00:00:04.9018417.

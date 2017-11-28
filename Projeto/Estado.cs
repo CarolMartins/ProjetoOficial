@@ -12,18 +12,25 @@ namespace Projeto
     using System;
     using System.Collections.Generic;
     
-    public partial class Departamento
+    public partial class Estado
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Departamento()
+        public Estado()
         {
+            this.Cidade = new HashSet<Cidade>();
             this.Funcionario = new HashSet<Funcionario>();
+            this.Funcionario1 = new HashSet<Funcionario>();
         }
     
         public int Id { get; set; }
-        public string departamento1 { get; set; }
+        public string Nome { get; set; }
+        public string uf { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Cidade> Cidade { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Funcionario> Funcionario { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Funcionario> Funcionario1 { get; set; }
     }
 }

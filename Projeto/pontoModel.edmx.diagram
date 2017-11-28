@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="094314ccc1ef405aa22a0c2f290b21ac" Name="Diagram1" ZoomLevel="98">
+        <EntityTypeShape EntityType="registro_pontoModel.Cidade" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="registro_pontoModel.Departamento" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="registro_pontoModel.Empresa" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="registro_pontoModel.Escolaridade" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="registro_pontoModel.Estado" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="registro_pontoModel.Jornada" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="registro_pontoModel.TipoAbono" Width="1.5" PointX="6.75" PointY="3.75" IsExpanded="true" />
+        <AssociationConnector Association="registro_pontoModel.FK_Cidade_Estado" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="registro_pontoModel.Funcao_Cargo" Width="1.5" PointX="5.375" PointY="0.75" />
+        <EntityTypeShape EntityType="registro_pontoModel.Usuario" Width="1.5" PointX="3" PointY="12.25" />
+        <EntityTypeShape EntityType="registro_pontoModel.Funcionario" Width="1.5" PointX="9.625" PointY="0.75" />
+        <AssociationConnector Association="registro_pontoModel.FK_Funcionario_Cidade" />
+        <AssociationConnector Association="registro_pontoModel.FK_Funcionario_CidadePIS" />
+        <AssociationConnector Association="registro_pontoModel.FK_Funcionario_Departamento" />
+        <AssociationConnector Association="registro_pontoModel.FK_Funcionario_Escolaridade" />
+        <AssociationConnector Association="registro_pontoModel.FK_Funcionario_EstadoCTPS" />
+        <AssociationConnector Association="registro_pontoModel.FK_Funcionario_EstadoRG" />
+        <AssociationConnector Association="registro_pontoModel.FK_Funcionario_Funcao" />
+        <AssociationConnector Association="registro_pontoModel.FK_Funcionario_Jornada" />
+        <AssociationConnector Association="registro_pontoModel.FK_Usuario_Funcionario" />
+        <EntityTypeShape EntityType="registro_pontoModel.Importacao" Width="1.5" PointX="11.875" PointY="4.625" />
+        <AssociationConnector Association="registro_pontoModel.FK_Importacao_Funcionario" />
+        <EntityTypeShape EntityType="registro_pontoModel.Banco" Width="1.5" PointX="5.375" PointY="6.875" />
+        <AssociationConnector Association="registro_pontoModel.FK_Funcionario_Banco" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

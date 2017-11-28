@@ -1,0 +1,920 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="registro_pontoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Banco">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Banco" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="CodigoBanco" Type="int" />
+        </EntityType>
+        <EntityType Name="Cidade">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nomeCidade" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="IdEstado" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Departamento">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="departamento" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Empresa">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="razaoSocial" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="nomeFantasia" Type="varchar" MaxLength="50" />
+          <Property Name="cnpj" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Escolaridade">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="escolaridade" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Estado">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nome" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="uf" Type="varchar" MaxLength="5" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Funcao_Cargo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="descricao" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Funcionario">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nome" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="dataNascimento" Type="date" Nullable="false" />
+          <Property Name="sexo" Type="char" MaxLength="1" />
+          <Property Name="email" Type="varchar" MaxLength="50" />
+          <Property Name="foneResidencial" Type="varchar" MaxLength="20" />
+          <Property Name="foneCelular" Type="varchar" MaxLength="20" />
+          <Property Name="cep" Type="varchar" MaxLength="15" />
+          <Property Name="logradouro" Type="varchar" MaxLength="50" />
+          <Property Name="numero" Type="varchar" MaxLength="10" />
+          <Property Name="complemento" Type="varchar" MaxLength="20" />
+          <Property Name="bairro" Type="varchar" MaxLength="30" />
+          <Property Name="carteiraTrabalho" Type="varchar" MaxLength="10" />
+          <Property Name="serieCarteira" Type="varchar" MaxLength="100" />
+          <Property Name="dataEmissao" Type="date" />
+          <Property Name="cpf" Type="varchar" MaxLength="20" />
+          <Property Name="rg" Type="varchar" MaxLength="20" />
+          <Property Name="dataEmissaoRg" Type="date" />
+          <Property Name="orgaoExpeditor" Type="varchar" MaxLength="10" />
+          <Property Name="numeroPis" Type="varchar" MaxLength="20" />
+          <Property Name="dataCadastro" Type="date" />
+          <Property Name="banco" Type="varchar" MaxLength="20" />
+          <Property Name="agencia" Type="varchar" MaxLength="20" />
+          <Property Name="codigoBanco" Type="varchar" MaxLength="20" />
+          <Property Name="codigoAgencia" Type="varchar" MaxLength="20" />
+          <Property Name="endereco" Type="varchar" MaxLength="100" />
+          <Property Name="idEscolaridade" Type="int" Nullable="false" />
+          <Property Name="idCidade" Type="int" Nullable="false" />
+          <Property Name="idDepartamento" Type="int" />
+          <Property Name="idFuncao" Type="int" />
+          <Property Name="idJornada" Type="int" />
+          <Property Name="idEstadoCTPS" Type="int" />
+          <Property Name="idEstadoRG" Type="int" />
+          <Property Name="idCidadePIS" Type="int" />
+          <Property Name="foto" Type="text" />
+          <Property Name="idbanco" Type="int" />
+        </EntityType>
+        <EntityType Name="Importacao">
+          <Key>
+            <PropertyRef Name="IDEntrada" />
+          </Key>
+          <Property Name="IDEntrada" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IDFuncionario" Type="int" Nullable="false" />
+          <Property Name="data" Type="date" Nullable="false" />
+          <Property Name="hora" Type="time" Precision="7" Nullable="false" />
+          <Property Name="nsr" Type="varchar" MaxLength="9" Nullable="false" />
+          <Property Name="numfabrep" Type="varchar" MaxLength="17" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Jornada">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="descricao" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="entrada1" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="saida1" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="entrada2" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="saida2" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="segundaFeira" Type="int" />
+          <Property Name="tercaFeira" Type="int" />
+          <Property Name="quartaFeira" Type="int" />
+          <Property Name="quintaFeira" Type="int" />
+          <Property Name="sextaFeira" Type="int" />
+          <Property Name="sabado" Type="int" />
+          <Property Name="domingo" Type="int" />
+          <Property Name="indeterminado" Type="int" />
+          <Property Name="totalJornada" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="TipoAbono">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="tipoAbono" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Usuario">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="login" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="senha" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="email" Type="varbinary" MaxLength="50" Nullable="false" />
+          <Property Name="data" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+          <Property Name="IdFuncionario" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Cidade_Estado">
+          <End Role="Estado" Type="Self.Estado" Multiplicity="1" />
+          <End Role="Cidade" Type="Self.Cidade" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Estado">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Cidade">
+              <PropertyRef Name="IdEstado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Funcionario_Banco">
+          <End Role="Banco" Type="Self.Banco" Multiplicity="0..1" />
+          <End Role="Funcionario" Type="Self.Funcionario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Banco">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Funcionario">
+              <PropertyRef Name="idbanco" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Funcionario_Cidade">
+          <End Role="Cidade" Type="Self.Cidade" Multiplicity="1" />
+          <End Role="Funcionario" Type="Self.Funcionario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cidade">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Funcionario">
+              <PropertyRef Name="idCidade" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Funcionario_CidadePIS">
+          <End Role="Cidade" Type="Self.Cidade" Multiplicity="0..1" />
+          <End Role="Funcionario" Type="Self.Funcionario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cidade">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Funcionario">
+              <PropertyRef Name="idCidadePIS" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Funcionario_Departamento">
+          <End Role="Departamento" Type="Self.Departamento" Multiplicity="0..1" />
+          <End Role="Funcionario" Type="Self.Funcionario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Departamento">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Funcionario">
+              <PropertyRef Name="idDepartamento" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Funcionario_Escolaridade">
+          <End Role="Escolaridade" Type="Self.Escolaridade" Multiplicity="1" />
+          <End Role="Funcionario" Type="Self.Funcionario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Escolaridade">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Funcionario">
+              <PropertyRef Name="idEscolaridade" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Funcionario_EstadoCTPS">
+          <End Role="Estado" Type="Self.Estado" Multiplicity="0..1" />
+          <End Role="Funcionario" Type="Self.Funcionario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Estado">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Funcionario">
+              <PropertyRef Name="idEstadoCTPS" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Funcionario_EstadoRG">
+          <End Role="Estado" Type="Self.Estado" Multiplicity="0..1" />
+          <End Role="Funcionario" Type="Self.Funcionario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Estado">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Funcionario">
+              <PropertyRef Name="idEstadoRG" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Funcionario_Funcao">
+          <End Role="Funcao_Cargo" Type="Self.Funcao_Cargo" Multiplicity="0..1" />
+          <End Role="Funcionario" Type="Self.Funcionario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Funcao_Cargo">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Funcionario">
+              <PropertyRef Name="idFuncao" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Funcionario_Jornada">
+          <End Role="Jornada" Type="Self.Jornada" Multiplicity="0..1" />
+          <End Role="Funcionario" Type="Self.Funcionario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Jornada">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Funcionario">
+              <PropertyRef Name="idJornada" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Importacao_Funcionario">
+          <End Role="Funcionario" Type="Self.Funcionario" Multiplicity="1" />
+          <End Role="Importacao" Type="Self.Importacao" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Funcionario">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Importacao">
+              <PropertyRef Name="IDFuncionario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Usuario_Funcionario">
+          <End Role="Funcionario" Type="Self.Funcionario" Multiplicity="1" />
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Funcionario">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Usuario">
+              <PropertyRef Name="IdFuncionario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="registro_pontoModelStoreContainer">
+          <EntitySet Name="Banco" EntityType="Self.Banco" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Cidade" EntityType="Self.Cidade" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Departamento" EntityType="Self.Departamento" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Empresa" EntityType="Self.Empresa" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Escolaridade" EntityType="Self.Escolaridade" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Estado" EntityType="Self.Estado" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Funcao_Cargo" EntityType="Self.Funcao_Cargo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Funcionario" EntityType="Self.Funcionario" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Importacao" EntityType="Self.Importacao" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Jornada" EntityType="Self.Jornada" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TipoAbono" EntityType="Self.TipoAbono" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Cidade_Estado" Association="Self.FK_Cidade_Estado">
+            <End Role="Estado" EntitySet="Estado" />
+            <End Role="Cidade" EntitySet="Cidade" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Funcionario_Banco" Association="Self.FK_Funcionario_Banco">
+            <End Role="Banco" EntitySet="Banco" />
+            <End Role="Funcionario" EntitySet="Funcionario" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Funcionario_Cidade" Association="Self.FK_Funcionario_Cidade">
+            <End Role="Cidade" EntitySet="Cidade" />
+            <End Role="Funcionario" EntitySet="Funcionario" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Funcionario_CidadePIS" Association="Self.FK_Funcionario_CidadePIS">
+            <End Role="Cidade" EntitySet="Cidade" />
+            <End Role="Funcionario" EntitySet="Funcionario" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Funcionario_Departamento" Association="Self.FK_Funcionario_Departamento">
+            <End Role="Departamento" EntitySet="Departamento" />
+            <End Role="Funcionario" EntitySet="Funcionario" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Funcionario_Escolaridade" Association="Self.FK_Funcionario_Escolaridade">
+            <End Role="Escolaridade" EntitySet="Escolaridade" />
+            <End Role="Funcionario" EntitySet="Funcionario" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Funcionario_EstadoCTPS" Association="Self.FK_Funcionario_EstadoCTPS">
+            <End Role="Estado" EntitySet="Estado" />
+            <End Role="Funcionario" EntitySet="Funcionario" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Funcionario_EstadoRG" Association="Self.FK_Funcionario_EstadoRG">
+            <End Role="Estado" EntitySet="Estado" />
+            <End Role="Funcionario" EntitySet="Funcionario" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Funcionario_Funcao" Association="Self.FK_Funcionario_Funcao">
+            <End Role="Funcao_Cargo" EntitySet="Funcao_Cargo" />
+            <End Role="Funcionario" EntitySet="Funcionario" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Funcionario_Jornada" Association="Self.FK_Funcionario_Jornada">
+            <End Role="Jornada" EntitySet="Jornada" />
+            <End Role="Funcionario" EntitySet="Funcionario" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Importacao_Funcionario" Association="Self.FK_Importacao_Funcionario">
+            <End Role="Funcionario" EntitySet="Funcionario" />
+            <End Role="Importacao" EntitySet="Importacao" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Usuario_Funcionario" Association="Self.FK_Usuario_Funcionario">
+            <End Role="Funcionario" EntitySet="Funcionario" />
+            <End Role="Usuario" EntitySet="Usuario" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="registro_pontoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Departamento">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="departamento1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Funcionario" Relationship="registro_pontoModel.FK_Funcionario_Departamento" FromRole="Departamento" ToRole="Funcionario" />
+        </EntityType>
+        <EntityType Name="Empresa">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="razaoSocial" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="nomeFantasia" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="cnpj" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Escolaridade">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="escolaridade1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Funcionario" Relationship="registro_pontoModel.FK_Funcionario_Escolaridade" FromRole="Escolaridade" ToRole="Funcionario" />
+        </EntityType>
+        <EntityType Name="Jornada">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="descricao" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="entrada1" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="saida1" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="entrada2" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="saida2" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="segundaFeira" Type="Int32" />
+          <Property Name="tercaFeira" Type="Int32" />
+          <Property Name="quartaFeira" Type="Int32" />
+          <Property Name="quintaFeira" Type="Int32" />
+          <Property Name="sextaFeira" Type="Int32" />
+          <Property Name="sabado" Type="Int32" />
+          <Property Name="domingo" Type="Int32" />
+          <Property Name="indeterminado" Type="Int32" />
+          <Property Name="totalJornada" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Funcionario" Relationship="registro_pontoModel.FK_Funcionario_Jornada" FromRole="Jornada" ToRole="Funcionario" />
+        </EntityType>
+        <EntityType Name="TipoAbono">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="tipoAbono1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="registro_pontoEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Departamento" EntityType="Self.Departamento" />
+          <EntitySet Name="Empresa" EntityType="Self.Empresa" />
+          <EntitySet Name="Escolaridade" EntityType="Self.Escolaridade" />
+          <EntitySet Name="Jornada" EntityType="Self.Jornada" />
+          <EntitySet Name="TipoAbono" EntityType="Self.TipoAbono" />
+          <EntitySet Name="Funcao_Cargo" EntityType="registro_pontoModel.Funcao_Cargo" />
+          <EntitySet Name="Usuario" EntityType="registro_pontoModel.Usuario" />
+          <EntitySet Name="Cidade" EntityType="registro_pontoModel.Cidade" />
+          <EntitySet Name="Estado" EntityType="registro_pontoModel.Estado" />
+          <AssociationSet Name="FK_Cidade_Estado" Association="registro_pontoModel.FK_Cidade_Estado">
+            <End Role="Estado" EntitySet="Estado" />
+            <End Role="Cidade" EntitySet="Cidade" />
+          </AssociationSet>
+          <EntitySet Name="Funcionario" EntityType="registro_pontoModel.Funcionario" />
+          <AssociationSet Name="FK_Funcionario_Cidade" Association="registro_pontoModel.FK_Funcionario_Cidade">
+            <End Role="Cidade" EntitySet="Cidade" />
+            <End Role="Funcionario" EntitySet="Funcionario" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Funcionario_CidadePIS" Association="registro_pontoModel.FK_Funcionario_CidadePIS">
+            <End Role="Cidade" EntitySet="Cidade" />
+            <End Role="Funcionario" EntitySet="Funcionario" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Funcionario_Departamento" Association="registro_pontoModel.FK_Funcionario_Departamento">
+            <End Role="Departamento" EntitySet="Departamento" />
+            <End Role="Funcionario" EntitySet="Funcionario" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Funcionario_Escolaridade" Association="registro_pontoModel.FK_Funcionario_Escolaridade">
+            <End Role="Escolaridade" EntitySet="Escolaridade" />
+            <End Role="Funcionario" EntitySet="Funcionario" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Funcionario_EstadoCTPS" Association="registro_pontoModel.FK_Funcionario_EstadoCTPS">
+            <End Role="Estado" EntitySet="Estado" />
+            <End Role="Funcionario" EntitySet="Funcionario" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Funcionario_EstadoRG" Association="registro_pontoModel.FK_Funcionario_EstadoRG">
+            <End Role="Estado" EntitySet="Estado" />
+            <End Role="Funcionario" EntitySet="Funcionario" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Funcionario_Funcao" Association="registro_pontoModel.FK_Funcionario_Funcao">
+            <End Role="Funcao_Cargo" EntitySet="Funcao_Cargo" />
+            <End Role="Funcionario" EntitySet="Funcionario" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Funcionario_Jornada" Association="registro_pontoModel.FK_Funcionario_Jornada">
+            <End Role="Jornada" EntitySet="Jornada" />
+            <End Role="Funcionario" EntitySet="Funcionario" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Usuario_Funcionario" Association="registro_pontoModel.FK_Usuario_Funcionario">
+            <End Role="Funcionario" EntitySet="Funcionario" />
+            <End Role="Usuario" EntitySet="Usuario" />
+          </AssociationSet>
+          <EntitySet Name="Importacao" EntityType="registro_pontoModel.Importacao" />
+          <AssociationSet Name="FK_Importacao_Funcionario" Association="registro_pontoModel.FK_Importacao_Funcionario">
+            <End Role="Funcionario" EntitySet="Funcionario" />
+            <End Role="Importacao" EntitySet="Importacao" />
+          </AssociationSet>
+          <EntitySet Name="Banco" EntityType="registro_pontoModel.Banco" />
+          <AssociationSet Name="FK_Funcionario_Banco" Association="registro_pontoModel.FK_Funcionario_Banco">
+            <End Role="Banco" EntitySet="Banco" />
+            <End Role="Funcionario" EntitySet="Funcionario" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Funcao_Cargo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="descricao" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Funcionario" Relationship="registro_pontoModel.FK_Funcionario_Funcao" FromRole="Funcao_Cargo" ToRole="Funcionario" />
+        </EntityType>
+        <EntityType Name="Usuario">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="login" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="senha" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="email" Type="Binary" Nullable="false" MaxLength="50" FixedLength="false" />
+          <Property Name="data" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="IdFuncionario" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Funcionario" Relationship="registro_pontoModel.FK_Usuario_Funcionario" FromRole="Usuario" ToRole="Funcionario" />
+        </EntityType>
+        <EntityType Name="Cidade">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nomeCidade" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="IdEstado" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Estado" Relationship="registro_pontoModel.FK_Cidade_Estado" FromRole="Cidade" ToRole="Estado" />
+          <NavigationProperty Name="Funcionario" Relationship="registro_pontoModel.FK_Funcionario_Cidade" FromRole="Cidade" ToRole="Funcionario" />
+          <NavigationProperty Name="Funcionario1" Relationship="registro_pontoModel.FK_Funcionario_CidadePIS" FromRole="Cidade" ToRole="Funcionario" />
+        </EntityType>
+        <EntityType Name="Estado">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nome" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="uf" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Cidade" Relationship="registro_pontoModel.FK_Cidade_Estado" FromRole="Estado" ToRole="Cidade" />
+          <NavigationProperty Name="Funcionario" Relationship="registro_pontoModel.FK_Funcionario_EstadoCTPS" FromRole="Estado" ToRole="Funcionario" />
+          <NavigationProperty Name="Funcionario1" Relationship="registro_pontoModel.FK_Funcionario_EstadoRG" FromRole="Estado" ToRole="Funcionario" />
+        </EntityType>
+        <Association Name="FK_Cidade_Estado">
+          <End Type="registro_pontoModel.Estado" Role="Estado" Multiplicity="1" />
+          <End Type="registro_pontoModel.Cidade" Role="Cidade" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Estado">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Cidade">
+              <PropertyRef Name="IdEstado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Funcionario">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nome" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="dataNascimento" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="foneResidencial" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="foneCelular" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="cep" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="logradouro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="numero" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="complemento" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="bairro" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="carteiraTrabalho" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="serieCarteira" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="dataEmissao" Type="DateTime" Precision="0" />
+          <Property Name="cpf" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="rg" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="dataEmissaoRg" Type="DateTime" Precision="0" />
+          <Property Name="orgaoExpeditor" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="numeroPis" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="dataCadastro" Type="DateTime" Precision="0" />
+          <Property Name="banco" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="agencia" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="codigoBanco" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="codigoAgencia" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="endereco" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="idEscolaridade" Type="Int32" Nullable="false" />
+          <Property Name="idCidade" Type="Int32" Nullable="false" />
+          <Property Name="idDepartamento" Type="Int32" />
+          <Property Name="idFuncao" Type="Int32" />
+          <Property Name="idJornada" Type="Int32" />
+          <Property Name="idEstadoCTPS" Type="Int32" />
+          <Property Name="idEstadoRG" Type="Int32" />
+          <Property Name="idCidadePIS" Type="Int32" />
+          <NavigationProperty Name="Cidade" Relationship="registro_pontoModel.FK_Funcionario_Cidade" FromRole="Funcionario" ToRole="Cidade" />
+          <NavigationProperty Name="CidadePIS" Relationship="registro_pontoModel.FK_Funcionario_CidadePIS" FromRole="Funcionario" ToRole="Cidade" />
+          <NavigationProperty Name="Departamento" Relationship="registro_pontoModel.FK_Funcionario_Departamento" FromRole="Funcionario" ToRole="Departamento" />
+          <NavigationProperty Name="Escolaridade" Relationship="registro_pontoModel.FK_Funcionario_Escolaridade" FromRole="Funcionario" ToRole="Escolaridade" />
+          <NavigationProperty Name="EstadoRG" Relationship="registro_pontoModel.FK_Funcionario_EstadoRG" FromRole="Funcionario" ToRole="Estado" />
+          <NavigationProperty Name="Funcao_Cargo" Relationship="registro_pontoModel.FK_Funcionario_Funcao" FromRole="Funcionario" ToRole="Funcao_Cargo" />
+          <NavigationProperty Name="Jornada" Relationship="registro_pontoModel.FK_Funcionario_Jornada" FromRole="Funcionario" ToRole="Jornada" />
+          <NavigationProperty Name="Usuario" Relationship="registro_pontoModel.FK_Usuario_Funcionario" FromRole="Funcionario" ToRole="Usuario" />
+          <Property Name="sexo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="foto" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Importacao" Relationship="registro_pontoModel.FK_Importacao_Funcionario" FromRole="Funcionario" ToRole="Importacao" />
+          <Property Name="idbanco" Type="Int32" />
+          <NavigationProperty Name="Banco1" Relationship="registro_pontoModel.FK_Funcionario_Banco" FromRole="Funcionario" ToRole="Banco" />
+        </EntityType>
+        <Association Name="FK_Funcionario_Cidade">
+          <End Type="registro_pontoModel.Cidade" Role="Cidade" Multiplicity="1" />
+          <End Type="registro_pontoModel.Funcionario" Role="Funcionario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cidade">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Funcionario">
+              <PropertyRef Name="idCidade" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Funcionario_CidadePIS">
+          <End Type="registro_pontoModel.Cidade" Role="Cidade" Multiplicity="0..1" />
+          <End Type="registro_pontoModel.Funcionario" Role="Funcionario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cidade">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Funcionario">
+              <PropertyRef Name="idCidadePIS" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Funcionario_Departamento">
+          <End Type="registro_pontoModel.Departamento" Role="Departamento" Multiplicity="0..1" />
+          <End Type="registro_pontoModel.Funcionario" Role="Funcionario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Departamento">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Funcionario">
+              <PropertyRef Name="idDepartamento" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Funcionario_Escolaridade">
+          <End Type="registro_pontoModel.Escolaridade" Role="Escolaridade" Multiplicity="1" />
+          <End Type="registro_pontoModel.Funcionario" Role="Funcionario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Escolaridade">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Funcionario">
+              <PropertyRef Name="idEscolaridade" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Funcionario_EstadoCTPS">
+          <End Type="registro_pontoModel.Estado" Role="Estado" Multiplicity="0..1" />
+          <End Type="registro_pontoModel.Funcionario" Role="Funcionario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Estado">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Funcionario">
+              <PropertyRef Name="idEstadoCTPS" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Funcionario_EstadoRG">
+          <End Type="registro_pontoModel.Estado" Role="Estado" Multiplicity="0..1" />
+          <End Type="registro_pontoModel.Funcionario" Role="Funcionario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Estado">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Funcionario">
+              <PropertyRef Name="idEstadoRG" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Funcionario_Funcao">
+          <End Type="registro_pontoModel.Funcao_Cargo" Role="Funcao_Cargo" Multiplicity="0..1" />
+          <End Type="registro_pontoModel.Funcionario" Role="Funcionario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Funcao_Cargo">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Funcionario">
+              <PropertyRef Name="idFuncao" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Funcionario_Jornada">
+          <End Type="registro_pontoModel.Jornada" Role="Jornada" Multiplicity="0..1" />
+          <End Type="registro_pontoModel.Funcionario" Role="Funcionario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Jornada">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Funcionario">
+              <PropertyRef Name="idJornada" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Usuario_Funcionario">
+          <End Type="registro_pontoModel.Funcionario" Role="Funcionario" Multiplicity="1" />
+          <End Type="registro_pontoModel.Usuario" Role="Usuario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Funcionario">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Usuario">
+              <PropertyRef Name="IdFuncionario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Importacao">
+          <Key>
+            <PropertyRef Name="IDEntrada" />
+          </Key>
+          <Property Name="IDEntrada" Type="Int32" Nullable="false" />
+          <Property Name="IDFuncionario" Type="Int32" Nullable="false" />
+          <Property Name="data" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="hora" Type="Time" Nullable="false" Precision="7" />
+          <Property Name="nsr" Type="String" Nullable="false" MaxLength="9" FixedLength="false" Unicode="false" />
+          <Property Name="numfabrep" Type="String" Nullable="false" MaxLength="17" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Funcionario" Relationship="registro_pontoModel.FK_Importacao_Funcionario" FromRole="Importacao" ToRole="Funcionario" />
+        </EntityType>
+        <Association Name="FK_Importacao_Funcionario">
+          <End Type="registro_pontoModel.Funcionario" Role="Funcionario" Multiplicity="1" />
+          <End Type="registro_pontoModel.Importacao" Role="Importacao" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Funcionario">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Importacao">
+              <PropertyRef Name="IDFuncionario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Banco">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Banco1" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Funcionario" Relationship="registro_pontoModel.FK_Funcionario_Banco" FromRole="Banco" ToRole="Funcionario" />
+          <Property Name="CodigoBanco" Type="Int32" />
+        </EntityType>
+        <Association Name="FK_Funcionario_Banco">
+          <End Type="registro_pontoModel.Banco" Role="Banco" Multiplicity="0..1" />
+          <End Type="registro_pontoModel.Funcionario" Role="Funcionario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Banco">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Funcionario">
+              <PropertyRef Name="idbanco" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="registro_pontoModelStoreContainer" CdmEntityContainer="registro_pontoEntities">
+          <EntitySetMapping Name="Departamento">
+            <EntityTypeMapping TypeName="registro_pontoModel.Departamento">
+              <MappingFragment StoreEntitySet="Departamento">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="departamento1" ColumnName="departamento" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Empresa">
+            <EntityTypeMapping TypeName="registro_pontoModel.Empresa">
+              <MappingFragment StoreEntitySet="Empresa">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="razaoSocial" ColumnName="razaoSocial" />
+                <ScalarProperty Name="nomeFantasia" ColumnName="nomeFantasia" />
+                <ScalarProperty Name="cnpj" ColumnName="cnpj" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Escolaridade">
+            <EntityTypeMapping TypeName="registro_pontoModel.Escolaridade">
+              <MappingFragment StoreEntitySet="Escolaridade">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="escolaridade1" ColumnName="escolaridade" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Jornada">
+            <EntityTypeMapping TypeName="registro_pontoModel.Jornada">
+              <MappingFragment StoreEntitySet="Jornada">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="descricao" ColumnName="descricao" />
+                <ScalarProperty Name="entrada1" ColumnName="entrada1" />
+                <ScalarProperty Name="saida1" ColumnName="saida1" />
+                <ScalarProperty Name="entrada2" ColumnName="entrada2" />
+                <ScalarProperty Name="saida2" ColumnName="saida2" />
+                <ScalarProperty Name="segundaFeira" ColumnName="segundaFeira" />
+                <ScalarProperty Name="tercaFeira" ColumnName="tercaFeira" />
+                <ScalarProperty Name="quartaFeira" ColumnName="quartaFeira" />
+                <ScalarProperty Name="quintaFeira" ColumnName="quintaFeira" />
+                <ScalarProperty Name="sextaFeira" ColumnName="sextaFeira" />
+                <ScalarProperty Name="sabado" ColumnName="sabado" />
+                <ScalarProperty Name="domingo" ColumnName="domingo" />
+                <ScalarProperty Name="indeterminado" ColumnName="indeterminado" />
+                <ScalarProperty Name="totalJornada" ColumnName="totalJornada" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TipoAbono">
+            <EntityTypeMapping TypeName="registro_pontoModel.TipoAbono">
+              <MappingFragment StoreEntitySet="TipoAbono">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="tipoAbono1" ColumnName="tipoAbono" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Funcao_Cargo">
+            <EntityTypeMapping TypeName="registro_pontoModel.Funcao_Cargo">
+              <MappingFragment StoreEntitySet="Funcao_Cargo">
+                <ScalarProperty Name="descricao" ColumnName="descricao" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Usuario">
+            <EntityTypeMapping TypeName="registro_pontoModel.Usuario">
+              <MappingFragment StoreEntitySet="Usuario">
+                <ScalarProperty Name="IdFuncionario" ColumnName="IdFuncionario" />
+                <ScalarProperty Name="data" ColumnName="data" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="senha" ColumnName="senha" />
+                <ScalarProperty Name="login" ColumnName="login" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Cidade">
+            <EntityTypeMapping TypeName="registro_pontoModel.Cidade">
+              <MappingFragment StoreEntitySet="Cidade">
+                <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+                <ScalarProperty Name="nomeCidade" ColumnName="nomeCidade" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Estado">
+            <EntityTypeMapping TypeName="registro_pontoModel.Estado">
+              <MappingFragment StoreEntitySet="Estado">
+                <ScalarProperty Name="uf" ColumnName="uf" />
+                <ScalarProperty Name="Nome" ColumnName="Nome" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Funcionario">
+            <EntityTypeMapping TypeName="registro_pontoModel.Funcionario">
+              <MappingFragment StoreEntitySet="Funcionario">
+                <ScalarProperty Name="idbanco" ColumnName="idbanco" />
+                <ScalarProperty Name="foto" ColumnName="foto" />
+                <ScalarProperty Name="sexo" ColumnName="sexo" />
+                <ScalarProperty Name="idCidadePIS" ColumnName="idCidadePIS" />
+                <ScalarProperty Name="idEstadoRG" ColumnName="idEstadoRG" />
+                <ScalarProperty Name="idEstadoCTPS" ColumnName="idEstadoCTPS" />
+                <ScalarProperty Name="idJornada" ColumnName="idJornada" />
+                <ScalarProperty Name="idFuncao" ColumnName="idFuncao" />
+                <ScalarProperty Name="idDepartamento" ColumnName="idDepartamento" />
+                <ScalarProperty Name="idCidade" ColumnName="idCidade" />
+                <ScalarProperty Name="idEscolaridade" ColumnName="idEscolaridade" />
+                <ScalarProperty Name="endereco" ColumnName="endereco" />
+                <ScalarProperty Name="codigoAgencia" ColumnName="codigoAgencia" />
+                <ScalarProperty Name="codigoBanco" ColumnName="codigoBanco" />
+                <ScalarProperty Name="agencia" ColumnName="agencia" />
+                <ScalarProperty Name="banco" ColumnName="banco" />
+                <ScalarProperty Name="dataCadastro" ColumnName="dataCadastro" />
+                <ScalarProperty Name="numeroPis" ColumnName="numeroPis" />
+                <ScalarProperty Name="orgaoExpeditor" ColumnName="orgaoExpeditor" />
+                <ScalarProperty Name="dataEmissaoRg" ColumnName="dataEmissaoRg" />
+                <ScalarProperty Name="rg" ColumnName="rg" />
+                <ScalarProperty Name="cpf" ColumnName="cpf" />
+                <ScalarProperty Name="dataEmissao" ColumnName="dataEmissao" />
+                <ScalarProperty Name="serieCarteira" ColumnName="serieCarteira" />
+                <ScalarProperty Name="carteiraTrabalho" ColumnName="carteiraTrabalho" />
+                <ScalarProperty Name="bairro" ColumnName="bairro" />
+                <ScalarProperty Name="complemento" ColumnName="complemento" />
+                <ScalarProperty Name="numero" ColumnName="numero" />
+                <ScalarProperty Name="logradouro" ColumnName="logradouro" />
+                <ScalarProperty Name="cep" ColumnName="cep" />
+                <ScalarProperty Name="foneCelular" ColumnName="foneCelular" />
+                <ScalarProperty Name="foneResidencial" ColumnName="foneResidencial" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="dataNascimento" ColumnName="dataNascimento" />
+                <ScalarProperty Name="nome" ColumnName="nome" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Importacao">
+            <EntityTypeMapping TypeName="registro_pontoModel.Importacao">
+              <MappingFragment StoreEntitySet="Importacao">
+                <ScalarProperty Name="numfabrep" ColumnName="numfabrep" />
+                <ScalarProperty Name="nsr" ColumnName="nsr" />
+                <ScalarProperty Name="hora" ColumnName="hora" />
+                <ScalarProperty Name="data" ColumnName="data" />
+                <ScalarProperty Name="IDFuncionario" ColumnName="IDFuncionario" />
+                <ScalarProperty Name="IDEntrada" ColumnName="IDEntrada" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Banco">
+            <EntityTypeMapping TypeName="registro_pontoModel.Banco">
+              <MappingFragment StoreEntitySet="Banco">
+                <ScalarProperty Name="CodigoBanco" ColumnName="CodigoBanco" />
+                <ScalarProperty Name="Banco1" ColumnName="Banco" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -12,11 +12,15 @@ namespace Projeto
     using System;
     using System.Collections.Generic;
     
-    public partial class Empresa
+    public partial class Importacao
     {
-        public int Id { get; set; }
-        public string razaoSocial { get; set; }
-        public string nomeFantasia { get; set; }
-        public string cnpj { get; set; }
+        public int IDEntrada { get; set; }
+        public int IDFuncionario { get; set; }
+        public System.DateTime data { get; set; }
+        public System.TimeSpan hora { get; set; }
+        public string nsr { get; set; }
+        public string numfabrep { get; set; }
+    
+        public virtual Funcionario Funcionario { get; set; }
     }
 }
