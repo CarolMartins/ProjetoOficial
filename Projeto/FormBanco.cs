@@ -137,5 +137,10 @@ namespace Projeto
                 Habilitar();
             }
         }
+
+        private void FormBanco_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

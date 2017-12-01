@@ -46,13 +46,14 @@
             this.btnSelecionar.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
             this.btnSelecionar.FlatAppearance.BorderSize = 2;
             this.btnSelecionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSelecionar.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSelecionar.Image = ((System.Drawing.Image)(resources.GetObject("btnSelecionar.Image")));
             this.btnSelecionar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSelecionar.Location = new System.Drawing.Point(9, 228);
             this.btnSelecionar.Name = "btnSelecionar";
-            this.btnSelecionar.Size = new System.Drawing.Size(138, 40);
-            this.btnSelecionar.TabIndex = 31;
-            this.btnSelecionar.Text = "SELECIONAR";
+            this.btnSelecionar.Size = new System.Drawing.Size(114, 40);
+            this.btnSelecionar.TabIndex = 3;
+            this.btnSelecionar.Text = "        SELECIONAR";
             this.btnSelecionar.UseVisualStyleBackColor = false;
             this.btnSelecionar.Click += new System.EventHandler(this.btnSelecionar_Click);
             // 
@@ -62,12 +63,13 @@
             this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
             this.btnCancelar.FlatAppearance.BorderSize = 2;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(275, 228);
+            this.btnCancelar.Location = new System.Drawing.Point(299, 228);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(138, 40);
-            this.btnCancelar.TabIndex = 30;
+            this.btnCancelar.Size = new System.Drawing.Size(114, 40);
+            this.btnCancelar.TabIndex = 4;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -82,7 +84,7 @@
             this.btnBuscar.Location = new System.Drawing.Point(382, 10);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(30, 27);
-            this.btnBuscar.TabIndex = 29;
+            this.btnBuscar.TabIndex = 1;
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
@@ -91,7 +93,7 @@
             this.txtPesquisa.Location = new System.Drawing.Point(59, 14);
             this.txtPesquisa.Name = "txtPesquisa";
             this.txtPesquisa.Size = new System.Drawing.Size(317, 20);
-            this.txtPesquisa.TabIndex = 28;
+            this.txtPesquisa.TabIndex = 0;
             // 
             // label1
             // 
@@ -115,7 +117,7 @@
             this.dgvEscolaridade.Name = "dgvEscolaridade";
             this.dgvEscolaridade.ReadOnly = true;
             this.dgvEscolaridade.Size = new System.Drawing.Size(404, 176);
-            this.dgvEscolaridade.TabIndex = 26;
+            this.dgvEscolaridade.TabIndex = 2;
             // 
             // Id
             // 
@@ -144,8 +146,10 @@
             this.Controls.Add(this.txtPesquisa);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvEscolaridade);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LocEscolaridade";
-            this.Text = "LocEscolaridade";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Buscar Escolaridade";
             ((System.ComponentModel.ISupportInitialize)(this.dgvEscolaridade)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -188,13 +188,14 @@
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
             this.button2.FlatAppearance.BorderSize = 2;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(15, 294);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(107, 40);
+            this.button2.Size = new System.Drawing.Size(114, 40);
             this.button2.TabIndex = 8;
-            this.button2.Text = "Inserir";
+            this.button2.Text = "INSERIR";
             this.button2.UseVisualStyleBackColor = false;
             // 
             // button3
@@ -203,13 +204,14 @@
             this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
             this.button3.FlatAppearance.BorderSize = 2;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(128, 294);
+            this.button3.Location = new System.Drawing.Point(135, 294);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(107, 40);
+            this.button3.Size = new System.Drawing.Size(114, 40);
             this.button3.TabIndex = 9;
-            this.button3.Text = "Alterar";
+            this.button3.Text = "ALTERAR";
             this.button3.UseVisualStyleBackColor = false;
             // 
             // button4
@@ -218,13 +220,14 @@
             this.button4.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
             this.button4.FlatAppearance.BorderSize = 2;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(241, 294);
+            this.button4.Location = new System.Drawing.Point(255, 294);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(107, 40);
+            this.button4.Size = new System.Drawing.Size(114, 40);
             this.button4.TabIndex = 10;
-            this.button4.Text = "Excluir";
+            this.button4.Text = "EXCLUIR";
             this.button4.UseVisualStyleBackColor = false;
             // 
             // FormOcorrencia

@@ -40,6 +40,7 @@
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.gpbAcesso = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnLocalizar = new System.Windows.Forms.Button();
@@ -47,7 +48,6 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnNovo = new System.Windows.Forms.Button();
             this.txtSenha = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.gpbAcesso.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,7 +56,7 @@
             this.txtId.Location = new System.Drawing.Point(16, 31);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(100, 20);
-            this.txtId.TabIndex = 24;
+            this.txtId.TabIndex = 0;
             // 
             // lbIdEmpresa
             // 
@@ -76,7 +76,7 @@
             this.btnBuscarId.Location = new System.Drawing.Point(538, 67);
             this.btnBuscarId.Name = "btnBuscarId";
             this.btnBuscarId.Size = new System.Drawing.Size(31, 31);
-            this.btnBuscarId.TabIndex = 25;
+            this.btnBuscarId.TabIndex = 2;
             this.btnBuscarId.UseVisualStyleBackColor = true;
             // 
             // txtFuncionario
@@ -84,7 +84,7 @@
             this.txtFuncionario.Location = new System.Drawing.Point(16, 78);
             this.txtFuncionario.Name = "txtFuncionario";
             this.txtFuncionario.Size = new System.Drawing.Size(519, 20);
-            this.txtFuncionario.TabIndex = 27;
+            this.txtFuncionario.TabIndex = 1;
             // 
             // label1
             // 
@@ -101,7 +101,7 @@
             this.txtLogin.Location = new System.Drawing.Point(16, 125);
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Size = new System.Drawing.Size(375, 20);
-            this.txtLogin.TabIndex = 29;
+            this.txtLogin.TabIndex = 3;
             // 
             // label2
             // 
@@ -128,7 +128,7 @@
             this.txtEmail.Location = new System.Drawing.Point(16, 170);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(553, 20);
-            this.txtEmail.TabIndex = 33;
+            this.txtEmail.TabIndex = 5;
             // 
             // label4
             // 
@@ -154,6 +154,13 @@
             this.gpbAcesso.TabStop = false;
             this.gpbAcesso.Text = "Último Acesso";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(10, 49);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(319, 27);
+            this.textBox1.TabIndex = 6;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -170,13 +177,13 @@
             this.btnSalvar.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
             this.btnSalvar.FlatAppearance.BorderSize = 2;
             this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvar.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.Image = ((System.Drawing.Image)(resources.GetObject("btnSalvar.Image")));
             this.btnSalvar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSalvar.Location = new System.Drawing.Point(126, 307);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(107, 40);
-            this.btnSalvar.TabIndex = 42;
+            this.btnSalvar.TabIndex = 8;
             this.btnSalvar.Text = "SALVAR";
             this.btnSalvar.UseVisualStyleBackColor = false;
             // 
@@ -186,14 +193,14 @@
             this.btnLocalizar.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
             this.btnLocalizar.FlatAppearance.BorderSize = 2;
             this.btnLocalizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLocalizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLocalizar.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLocalizar.Image = ((System.Drawing.Image)(resources.GetObject("btnLocalizar.Image")));
             this.btnLocalizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLocalizar.Location = new System.Drawing.Point(461, 307);
             this.btnLocalizar.Name = "btnLocalizar";
             this.btnLocalizar.Size = new System.Drawing.Size(107, 40);
-            this.btnLocalizar.TabIndex = 41;
-            this.btnLocalizar.Text = "LOCALIZAR";
+            this.btnLocalizar.TabIndex = 11;
+            this.btnLocalizar.Text = "  LOCALIZAR";
             this.btnLocalizar.UseVisualStyleBackColor = false;
             // 
             // btnExcluir
@@ -202,13 +209,13 @@
             this.btnExcluir.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
             this.btnExcluir.FlatAppearance.BorderSize = 2;
             this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcluir.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluir.Image")));
             this.btnExcluir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExcluir.Location = new System.Drawing.Point(349, 307);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(107, 40);
-            this.btnExcluir.TabIndex = 40;
+            this.btnExcluir.TabIndex = 10;
             this.btnExcluir.Text = "EXCLUIR";
             this.btnExcluir.UseVisualStyleBackColor = false;
             // 
@@ -218,14 +225,14 @@
             this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
             this.btnCancelar.FlatAppearance.BorderSize = 2;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCancelar.Location = new System.Drawing.Point(237, 307);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(107, 40);
-            this.btnCancelar.TabIndex = 39;
-            this.btnCancelar.Text = "CANCELAR";
+            this.btnCancelar.TabIndex = 9;
+            this.btnCancelar.Text = "  CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = false;
             // 
             // btnNovo
@@ -235,13 +242,13 @@
             this.btnNovo.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
             this.btnNovo.FlatAppearance.BorderSize = 2;
             this.btnNovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNovo.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNovo.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNovo.Image = ((System.Drawing.Image)(resources.GetObject("btnNovo.Image")));
             this.btnNovo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNovo.Location = new System.Drawing.Point(15, 307);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(107, 40);
-            this.btnNovo.TabIndex = 38;
+            this.btnNovo.TabIndex = 7;
             this.btnNovo.Text = "NOVO";
             this.btnNovo.UseVisualStyleBackColor = false;
             // 
@@ -251,14 +258,7 @@
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(172, 20);
-            this.txtSenha.TabIndex = 31;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(10, 49);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(319, 27);
-            this.textBox1.TabIndex = 43;
+            this.txtSenha.TabIndex = 4;
             // 
             // FormUsuario
             // 
@@ -283,8 +283,10 @@
             this.Controls.Add(this.btnBuscarId);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.lbIdEmpresa);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormUsuario";
-            this.Text = "FormUsuario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Cadastro de Usuário";
             this.gpbAcesso.ResumeLayout(false);
             this.gpbAcesso.PerformLayout();
             this.ResumeLayout(false);

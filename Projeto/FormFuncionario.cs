@@ -436,13 +436,13 @@ namespace Projeto
             txtSerie.Text = func.serieCarteira;
             if (func.idEstadoCTPS != null)
                 comboEstadoCarteira.SelectedValue = func.EstadoRG.Id;
-            dtpDataEmissão.Value = (DateTime) func.dataEmissao;
+            dtpDataEmissão.Value = (DateTime)func.dataEmissao;
             mtbCpf.Text = func.cpf;
             txtRg.Text = func.rg;
             if (func.dataEmissao != null)
                 dtpDataEmissão.Value = (DateTime)func.dataEmissaoRg;
             txtOrgaoExpeditor.Text = func.orgaoExpeditor;
-            if (func.EstadoRG!=null)
+            if (func.EstadoRG != null)
                 comboUF.SelectedValue = func.EstadoRG.Id;
             txtPis.Text = func.numeroPis;
             dtpDataPis.Value = (DateTime)func.dataCadastro;
@@ -495,7 +495,7 @@ namespace Projeto
 
                     picLogo.Image = new Bitmap(new Bitmap(openFile1.FileName), picLogo.Size);
                     //picLogo.Image.Save(@"C:\Carol\teste.jpg", ImageFormat.Jpeg);
-                   
+
                 }
 
 
@@ -508,6 +508,5 @@ namespace Projeto
             }
         }
     }
-
 }
 

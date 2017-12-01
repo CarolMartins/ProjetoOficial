@@ -52,7 +52,7 @@
             this.dgvAbono.Name = "dgvAbono";
             this.dgvAbono.ReadOnly = true;
             this.dgvAbono.Size = new System.Drawing.Size(404, 176);
-            this.dgvAbono.TabIndex = 0;
+            this.dgvAbono.TabIndex = 2;
             this.dgvAbono.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAbono_CellContentClick);
             // 
             // Id
@@ -86,7 +86,7 @@
             this.txtPesquisa.Location = new System.Drawing.Point(61, 16);
             this.txtPesquisa.Name = "txtPesquisa";
             this.txtPesquisa.Size = new System.Drawing.Size(317, 20);
-            this.txtPesquisa.TabIndex = 2;
+            this.txtPesquisa.TabIndex = 0;
             this.txtPesquisa.TextChanged += new System.EventHandler(this.txtPesquisa_TextChanged);
             // 
             // btnBuscarAbono
@@ -99,7 +99,7 @@
             this.btnBuscarAbono.Location = new System.Drawing.Point(384, 12);
             this.btnBuscarAbono.Name = "btnBuscarAbono";
             this.btnBuscarAbono.Size = new System.Drawing.Size(30, 27);
-            this.btnBuscarAbono.TabIndex = 5;
+            this.btnBuscarAbono.TabIndex = 1;
             this.btnBuscarAbono.UseVisualStyleBackColor = true;
             this.btnBuscarAbono.Click += new System.EventHandler(this.btnBuscarAbono_Click);
             // 
@@ -109,12 +109,13 @@
             this.btnCancelarAbono.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
             this.btnCancelarAbono.FlatAppearance.BorderSize = 2;
             this.btnCancelarAbono.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelarAbono.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelarAbono.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelarAbono.Image")));
             this.btnCancelarAbono.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelarAbono.Location = new System.Drawing.Point(276, 240);
+            this.btnCancelarAbono.Location = new System.Drawing.Point(300, 240);
             this.btnCancelarAbono.Name = "btnCancelarAbono";
-            this.btnCancelarAbono.Size = new System.Drawing.Size(138, 40);
-            this.btnCancelarAbono.TabIndex = 18;
+            this.btnCancelarAbono.Size = new System.Drawing.Size(114, 40);
+            this.btnCancelarAbono.TabIndex = 4;
             this.btnCancelarAbono.Text = "CANCELAR";
             this.btnCancelarAbono.UseVisualStyleBackColor = false;
             this.btnCancelarAbono.Click += new System.EventHandler(this.btnCancelarAbono_Click);
@@ -125,13 +126,14 @@
             this.btnSelecionarAbono.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
             this.btnSelecionarAbono.FlatAppearance.BorderSize = 2;
             this.btnSelecionarAbono.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSelecionarAbono.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSelecionarAbono.Image = ((System.Drawing.Image)(resources.GetObject("btnSelecionarAbono.Image")));
             this.btnSelecionarAbono.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSelecionarAbono.Location = new System.Drawing.Point(10, 240);
             this.btnSelecionarAbono.Name = "btnSelecionarAbono";
-            this.btnSelecionarAbono.Size = new System.Drawing.Size(138, 40);
-            this.btnSelecionarAbono.TabIndex = 19;
-            this.btnSelecionarAbono.Text = "SELECIONAR";
+            this.btnSelecionarAbono.Size = new System.Drawing.Size(114, 40);
+            this.btnSelecionarAbono.TabIndex = 3;
+            this.btnSelecionarAbono.Text = "       SELECIONAR";
             this.btnSelecionarAbono.UseVisualStyleBackColor = false;
             this.btnSelecionarAbono.Click += new System.EventHandler(this.button1_Click_1);
             // 
@@ -148,6 +150,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvAbono);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LocTipoAbono";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Buscar Tipo Abono";

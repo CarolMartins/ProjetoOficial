@@ -46,12 +46,13 @@
             this.btnSalvar.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
             this.btnSalvar.FlatAppearance.BorderSize = 2;
             this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalvar.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.Image = ((System.Drawing.Image)(resources.GetObject("btnSalvar.Image")));
             this.btnSalvar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSalvar.Location = new System.Drawing.Point(134, 122);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(114, 40);
-            this.btnSalvar.TabIndex = 38;
+            this.btnSalvar.TabIndex = 3;
             this.btnSalvar.Text = "SALVAR";
             this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
@@ -62,12 +63,13 @@
             this.btnLocalizar.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
             this.btnLocalizar.FlatAppearance.BorderSize = 2;
             this.btnLocalizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLocalizar.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLocalizar.Image = ((System.Drawing.Image)(resources.GetObject("btnLocalizar.Image")));
             this.btnLocalizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLocalizar.Location = new System.Drawing.Point(495, 122);
             this.btnLocalizar.Name = "btnLocalizar";
             this.btnLocalizar.Size = new System.Drawing.Size(114, 40);
-            this.btnLocalizar.TabIndex = 37;
+            this.btnLocalizar.TabIndex = 6;
             this.btnLocalizar.Text = "LOCALIZAR";
             this.btnLocalizar.UseVisualStyleBackColor = false;
             this.btnLocalizar.Click += new System.EventHandler(this.btnLocalizar_Click);
@@ -78,12 +80,13 @@
             this.btnExcluir.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
             this.btnExcluir.FlatAppearance.BorderSize = 2;
             this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExcluir.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluir.Image")));
             this.btnExcluir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExcluir.Location = new System.Drawing.Point(374, 122);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(114, 40);
-            this.btnExcluir.TabIndex = 36;
+            this.btnExcluir.TabIndex = 5;
             this.btnExcluir.Text = "EXCLUIR";
             this.btnExcluir.UseVisualStyleBackColor = false;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
@@ -94,12 +97,13 @@
             this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
             this.btnCancelar.FlatAppearance.BorderSize = 2;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCancelar.Location = new System.Drawing.Point(254, 122);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(114, 40);
-            this.btnCancelar.TabIndex = 35;
+            this.btnCancelar.TabIndex = 4;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -111,12 +115,13 @@
             this.btnNovo.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
             this.btnNovo.FlatAppearance.BorderSize = 2;
             this.btnNovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNovo.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNovo.Image = ((System.Drawing.Image)(resources.GetObject("btnNovo.Image")));
             this.btnNovo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNovo.Location = new System.Drawing.Point(15, 122);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(114, 40);
-            this.btnNovo.TabIndex = 34;
+            this.btnNovo.TabIndex = 2;
             this.btnNovo.Text = "NOVO";
             this.btnNovo.UseVisualStyleBackColor = false;
             this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
@@ -126,7 +131,7 @@
             this.txtEscolaridade.Location = new System.Drawing.Point(17, 86);
             this.txtEscolaridade.Name = "txtEscolaridade";
             this.txtEscolaridade.Size = new System.Drawing.Size(594, 20);
-            this.txtEscolaridade.TabIndex = 33;
+            this.txtEscolaridade.TabIndex = 1;
             // 
             // lbDepartamento
             // 
@@ -143,7 +148,8 @@
             this.txtIdEscolaridade.Location = new System.Drawing.Point(17, 35);
             this.txtIdEscolaridade.Name = "txtIdEscolaridade";
             this.txtIdEscolaridade.Size = new System.Drawing.Size(100, 20);
-            this.txtIdEscolaridade.TabIndex = 31;
+            this.txtIdEscolaridade.TabIndex = 0;
+            this.txtIdEscolaridade.TextChanged += new System.EventHandler(this.txtIdEscolaridade_TextChanged);
             this.txtIdEscolaridade.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtIdEscolaridade_KeyDown);
             // 
             // lbIdEmpresa
@@ -171,8 +177,10 @@
             this.Controls.Add(this.lbDepartamento);
             this.Controls.Add(this.txtIdEscolaridade);
             this.Controls.Add(this.lbIdEmpresa);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormEscolaridade";
-            this.Text = "FormEscolaridade";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Cadastro de Escolaridade";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -47,13 +47,14 @@
             this.btnSelecionarBanco.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
             this.btnSelecionarBanco.FlatAppearance.BorderSize = 2;
             this.btnSelecionarBanco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSelecionarBanco.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSelecionarBanco.Image = ((System.Drawing.Image)(resources.GetObject("btnSelecionarBanco.Image")));
             this.btnSelecionarBanco.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSelecionarBanco.Location = new System.Drawing.Point(9, 228);
             this.btnSelecionarBanco.Name = "btnSelecionarBanco";
-            this.btnSelecionarBanco.Size = new System.Drawing.Size(138, 40);
-            this.btnSelecionarBanco.TabIndex = 31;
-            this.btnSelecionarBanco.Text = "SELECIONAR";
+            this.btnSelecionarBanco.Size = new System.Drawing.Size(114, 40);
+            this.btnSelecionarBanco.TabIndex = 3;
+            this.btnSelecionarBanco.Text = "        SELECIONAR";
             this.btnSelecionarBanco.UseVisualStyleBackColor = false;
             this.btnSelecionarBanco.Click += new System.EventHandler(this.btnSelecionarBanco_Click);
             // 
@@ -63,12 +64,13 @@
             this.btnCancelarCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
             this.btnCancelarCancelar.FlatAppearance.BorderSize = 2;
             this.btnCancelarCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelarCancelar.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelarCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelarCancelar.Image")));
             this.btnCancelarCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelarCancelar.Location = new System.Drawing.Point(284, 228);
+            this.btnCancelarCancelar.Location = new System.Drawing.Point(308, 228);
             this.btnCancelarCancelar.Name = "btnCancelarCancelar";
-            this.btnCancelarCancelar.Size = new System.Drawing.Size(138, 40);
-            this.btnCancelarCancelar.TabIndex = 30;
+            this.btnCancelarCancelar.Size = new System.Drawing.Size(114, 40);
+            this.btnCancelarCancelar.TabIndex = 4;
             this.btnCancelarCancelar.Text = "CANCELAR";
             this.btnCancelarCancelar.UseVisualStyleBackColor = false;
             this.btnCancelarCancelar.Click += new System.EventHandler(this.btnCancelarCancelar_Click);
@@ -83,7 +85,7 @@
             this.btnBuscarBanco.Location = new System.Drawing.Point(391, 10);
             this.btnBuscarBanco.Name = "btnBuscarBanco";
             this.btnBuscarBanco.Size = new System.Drawing.Size(30, 27);
-            this.btnBuscarBanco.TabIndex = 29;
+            this.btnBuscarBanco.TabIndex = 1;
             this.btnBuscarBanco.UseVisualStyleBackColor = true;
             this.btnBuscarBanco.Click += new System.EventHandler(this.btnBuscarBanco_Click);
             // 
@@ -92,7 +94,7 @@
             this.txtPesquisa.Location = new System.Drawing.Point(59, 14);
             this.txtPesquisa.Name = "txtPesquisa";
             this.txtPesquisa.Size = new System.Drawing.Size(326, 20);
-            this.txtPesquisa.TabIndex = 28;
+            this.txtPesquisa.TabIndex = 0;
             // 
             // label1
             // 
@@ -117,7 +119,7 @@
             this.dgvbanco.Name = "dgvbanco";
             this.dgvbanco.ReadOnly = true;
             this.dgvbanco.Size = new System.Drawing.Size(413, 176);
-            this.dgvbanco.TabIndex = 26;
+            this.dgvbanco.TabIndex = 2;
             // 
             // Id
             // 
@@ -154,8 +156,10 @@
             this.Controls.Add(this.txtPesquisa);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvbanco);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LocBanco";
-            this.Text = "LocBanco";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Buscar Banco";
             ((System.ComponentModel.ISupportInitialize)(this.dgvbanco)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

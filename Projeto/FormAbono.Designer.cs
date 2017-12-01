@@ -51,7 +51,7 @@
             this.btSalvar.Location = new System.Drawing.Point(134, 122);
             this.btSalvar.Name = "btSalvar";
             this.btSalvar.Size = new System.Drawing.Size(114, 40);
-            this.btSalvar.TabIndex = 29;
+            this.btSalvar.TabIndex = 3;
             this.btSalvar.Text = "SALVAR";
             this.btSalvar.UseVisualStyleBackColor = false;
             this.btSalvar.Click += new System.EventHandler(this.btSalvar_Click);
@@ -67,7 +67,7 @@
             this.btnLocalizar.Location = new System.Drawing.Point(495, 122);
             this.btnLocalizar.Name = "btnLocalizar";
             this.btnLocalizar.Size = new System.Drawing.Size(114, 40);
-            this.btnLocalizar.TabIndex = 28;
+            this.btnLocalizar.TabIndex = 6;
             this.btnLocalizar.Text = "LOCALIZAR";
             this.btnLocalizar.UseVisualStyleBackColor = false;
             this.btnLocalizar.Click += new System.EventHandler(this.btnLocalizar_Click);
@@ -83,7 +83,7 @@
             this.btnExcluir.Location = new System.Drawing.Point(374, 122);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(114, 40);
-            this.btnExcluir.TabIndex = 27;
+            this.btnExcluir.TabIndex = 5;
             this.btnExcluir.Text = "EXCLUIR";
             this.btnExcluir.UseVisualStyleBackColor = false;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
@@ -99,7 +99,7 @@
             this.btnEditar.Location = new System.Drawing.Point(254, 122);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(114, 40);
-            this.btnEditar.TabIndex = 26;
+            this.btnEditar.TabIndex = 4;
             this.btnEditar.Text = "CANCELAR";
             this.btnEditar.UseVisualStyleBackColor = false;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
@@ -116,7 +116,7 @@
             this.btNovo.Location = new System.Drawing.Point(15, 122);
             this.btNovo.Name = "btNovo";
             this.btNovo.Size = new System.Drawing.Size(114, 40);
-            this.btNovo.TabIndex = 25;
+            this.btNovo.TabIndex = 2;
             this.btNovo.Text = "NOVO";
             this.btNovo.UseVisualStyleBackColor = false;
             this.btNovo.Click += new System.EventHandler(this.btNovo_Click);
@@ -126,7 +126,7 @@
             this.txtTipoAbono.Location = new System.Drawing.Point(17, 86);
             this.txtTipoAbono.Name = "txtTipoAbono";
             this.txtTipoAbono.Size = new System.Drawing.Size(594, 20);
-            this.txtTipoAbono.TabIndex = 24;
+            this.txtTipoAbono.TabIndex = 1;
             // 
             // lbDepartamento
             // 
@@ -143,7 +143,7 @@
             this.txtId.Location = new System.Drawing.Point(17, 35);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(100, 20);
-            this.txtId.TabIndex = 22;
+            this.txtId.TabIndex = 0;
             this.txtId.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtId_KeyDown);
             // 
             // lbIdEmpresa
@@ -172,6 +172,7 @@
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.lbIdEmpresa);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormAbono";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Motivo Abono ";

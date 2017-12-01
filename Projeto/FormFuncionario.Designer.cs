@@ -130,10 +130,11 @@
             // 
             // btnCarregarImagem
             // 
+            this.btnCarregarImagem.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCarregarImagem.Location = new System.Drawing.Point(687, 178);
             this.btnCarregarImagem.Name = "btnCarregarImagem";
             this.btnCarregarImagem.Size = new System.Drawing.Size(106, 29);
-            this.btnCarregarImagem.TabIndex = 23;
+            this.btnCarregarImagem.TabIndex = 9;
             this.btnCarregarImagem.Text = "Carregar Imagem";
             this.btnCarregarImagem.UseVisualStyleBackColor = true;
             this.btnCarregarImagem.Click += new System.EventHandler(this.btnCarregarImagem_Click);
@@ -210,7 +211,7 @@
             this.comboCidade.Location = new System.Drawing.Point(477, 100);
             this.comboCidade.Name = "comboCidade";
             this.comboCidade.Size = new System.Drawing.Size(310, 24);
-            this.comboCidade.TabIndex = 36;
+            this.comboCidade.TabIndex = 16;
             // 
             // mtbCep
             // 
@@ -218,7 +219,7 @@
             this.mtbCep.Mask = "##.###-###";
             this.mtbCep.Name = "mtbCep";
             this.mtbCep.Size = new System.Drawing.Size(100, 23);
-            this.mtbCep.TabIndex = 38;
+            this.mtbCep.TabIndex = 10;
             // 
             // label15
             // 
@@ -246,7 +247,7 @@
             this.comboEstado.Location = new System.Drawing.Point(265, 100);
             this.comboEstado.Name = "comboEstado";
             this.comboEstado.Size = new System.Drawing.Size(206, 24);
-            this.comboEstado.TabIndex = 34;
+            this.comboEstado.TabIndex = 15;
             this.comboEstado.SelectedIndexChanged += new System.EventHandler(this.comboEstado_SelectedIndexChanged);
             this.comboEstado.SelectedValueChanged += new System.EventHandler(this.comboEstado_SelectedValueChanged);
             // 
@@ -285,14 +286,14 @@
             this.txtBairro.Location = new System.Drawing.Point(10, 100);
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(249, 23);
-            this.txtBairro.TabIndex = 32;
+            this.txtBairro.TabIndex = 14;
             // 
             // txtLogradouro
             // 
             this.txtLogradouro.Location = new System.Drawing.Point(117, 41);
             this.txtLogradouro.Name = "txtLogradouro";
             this.txtLogradouro.Size = new System.Drawing.Size(441, 23);
-            this.txtLogradouro.TabIndex = 26;
+            this.txtLogradouro.TabIndex = 11;
             // 
             // label11
             // 
@@ -309,14 +310,14 @@
             this.txtComplemento.Location = new System.Drawing.Point(648, 41);
             this.txtComplemento.Name = "txtComplemento";
             this.txtComplemento.Size = new System.Drawing.Size(139, 23);
-            this.txtComplemento.TabIndex = 30;
+            this.txtComplemento.TabIndex = 13;
             // 
             // txtNumero
             // 
             this.txtNumero.Location = new System.Drawing.Point(564, 41);
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(79, 23);
-            this.txtNumero.TabIndex = 28;
+            this.txtNumero.TabIndex = 12;
             // 
             // label12
             // 
@@ -361,7 +362,7 @@
             this.txtId.Location = new System.Drawing.Point(7, 43);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(91, 23);
-            this.txtId.TabIndex = 55;
+            this.txtId.TabIndex = 0;
             this.txtId.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtId_KeyDown);
             // 
             // label16
@@ -380,7 +381,7 @@
             this.comboEscolaridade.Location = new System.Drawing.Point(313, 96);
             this.comboEscolaridade.Name = "comboEscolaridade";
             this.comboEscolaridade.Size = new System.Drawing.Size(350, 24);
-            this.comboEscolaridade.TabIndex = 53;
+            this.comboEscolaridade.TabIndex = 5;
             // 
             // label9
             // 
@@ -397,7 +398,7 @@
             this.txtFoneCel.Location = new System.Drawing.Point(522, 150);
             this.txtFoneCel.Name = "txtFoneCel";
             this.txtFoneCel.Size = new System.Drawing.Size(141, 23);
-            this.txtFoneCel.TabIndex = 51;
+            this.txtFoneCel.TabIndex = 8;
             // 
             // label8
             // 
@@ -414,7 +415,7 @@
             this.txtFoneRes.Location = new System.Drawing.Point(375, 150);
             this.txtFoneRes.Name = "txtFoneRes";
             this.txtFoneRes.Size = new System.Drawing.Size(141, 23);
-            this.txtFoneRes.TabIndex = 49;
+            this.txtFoneRes.TabIndex = 7;
             // 
             // label7
             // 
@@ -431,7 +432,7 @@
             this.txtEmail.Location = new System.Drawing.Point(5, 150);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(364, 23);
-            this.txtEmail.TabIndex = 47;
+            this.txtEmail.TabIndex = 6;
             // 
             // label6
             // 
@@ -449,7 +450,7 @@
             this.rdbMasculino.Location = new System.Drawing.Point(224, 100);
             this.rdbMasculino.Name = "rdbMasculino";
             this.rdbMasculino.Size = new System.Drawing.Size(82, 20);
-            this.rdbMasculino.TabIndex = 45;
+            this.rdbMasculino.TabIndex = 4;
             this.rdbMasculino.TabStop = true;
             this.rdbMasculino.Text = "Masculino";
             this.rdbMasculino.UseVisualStyleBackColor = true;
@@ -460,7 +461,7 @@
             this.rdbFeminino.Location = new System.Drawing.Point(140, 100);
             this.rdbFeminino.Name = "rdbFeminino";
             this.rdbFeminino.Size = new System.Drawing.Size(78, 20);
-            this.rdbFeminino.TabIndex = 44;
+            this.rdbFeminino.TabIndex = 3;
             this.rdbFeminino.TabStop = true;
             this.rdbFeminino.Text = "Feminino";
             this.rdbFeminino.UseVisualStyleBackColor = true;
@@ -491,7 +492,7 @@
             this.dtpDataNascimento.Location = new System.Drawing.Point(5, 95);
             this.dtpDataNascimento.Name = "dtpDataNascimento";
             this.dtpDataNascimento.Size = new System.Drawing.Size(123, 23);
-            this.dtpDataNascimento.TabIndex = 41;
+            this.dtpDataNascimento.TabIndex = 2;
             // 
             // label3
             // 
@@ -508,7 +509,7 @@
             this.txtNome.Location = new System.Drawing.Point(104, 44);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(559, 23);
-            this.txtNome.TabIndex = 40;
+            this.txtNome.TabIndex = 1;
             // 
             // checkBox1
             // 
@@ -589,7 +590,7 @@
             this.comboBanco.Location = new System.Drawing.Point(11, 95);
             this.comboBanco.Name = "comboBanco";
             this.comboBanco.Size = new System.Drawing.Size(298, 24);
-            this.comboBanco.TabIndex = 29;
+            this.comboBanco.TabIndex = 28;
             // 
             // txtCodAgencia
             // 
@@ -597,7 +598,7 @@
             this.txtCodAgencia.Location = new System.Drawing.Point(323, 141);
             this.txtCodAgencia.Name = "txtCodAgencia";
             this.txtCodAgencia.Size = new System.Drawing.Size(100, 23);
-            this.txtCodAgencia.TabIndex = 28;
+            this.txtCodAgencia.TabIndex = 31;
             // 
             // label31
             // 
@@ -616,7 +617,7 @@
             this.txtCodBanco.Location = new System.Drawing.Point(323, 93);
             this.txtCodBanco.Name = "txtCodBanco";
             this.txtCodBanco.Size = new System.Drawing.Size(100, 23);
-            this.txtCodBanco.TabIndex = 26;
+            this.txtCodBanco.TabIndex = 29;
             // 
             // label30
             // 
@@ -635,7 +636,7 @@
             this.txtAgencia.Location = new System.Drawing.Point(11, 141);
             this.txtAgencia.Name = "txtAgencia";
             this.txtAgencia.Size = new System.Drawing.Size(298, 23);
-            this.txtAgencia.TabIndex = 24;
+            this.txtAgencia.TabIndex = 30;
             // 
             // label29
             // 
@@ -666,7 +667,7 @@
             this.dtpDataPis.Location = new System.Drawing.Point(179, 43);
             this.dtpDataPis.Name = "dtpDataPis";
             this.dtpDataPis.Size = new System.Drawing.Size(138, 23);
-            this.dtpDataPis.TabIndex = 20;
+            this.dtpDataPis.TabIndex = 27;
             // 
             // txtPis
             // 
@@ -674,7 +675,7 @@
             this.txtPis.Location = new System.Drawing.Point(11, 43);
             this.txtPis.Name = "txtPis";
             this.txtPis.Size = new System.Drawing.Size(153, 23);
-            this.txtPis.TabIndex = 1;
+            this.txtPis.TabIndex = 26;
             // 
             // label27
             // 
@@ -704,7 +705,7 @@
             this.comboUF.Location = new System.Drawing.Point(568, 78);
             this.comboUF.Name = "comboUF";
             this.comboUF.Size = new System.Drawing.Size(71, 21);
-            this.comboUF.TabIndex = 17;
+            this.comboUF.TabIndex = 25;
             // 
             // label25
             // 
@@ -721,7 +722,7 @@
             this.txtOrgaoExpeditor.Location = new System.Drawing.Point(464, 80);
             this.txtOrgaoExpeditor.Name = "txtOrgaoExpeditor";
             this.txtOrgaoExpeditor.Size = new System.Drawing.Size(98, 20);
-            this.txtOrgaoExpeditor.TabIndex = 15;
+            this.txtOrgaoExpeditor.TabIndex = 24;
             // 
             // label24
             // 
@@ -739,7 +740,7 @@
             this.dtpDtEmissaoRG.Location = new System.Drawing.Point(318, 79);
             this.dtpDtEmissaoRG.Name = "dtpDtEmissaoRG";
             this.dtpDtEmissaoRG.Size = new System.Drawing.Size(138, 20);
-            this.dtpDtEmissaoRG.TabIndex = 13;
+            this.dtpDtEmissaoRG.TabIndex = 23;
             // 
             // label23
             // 
@@ -756,7 +757,7 @@
             this.txtRg.Location = new System.Drawing.Point(166, 80);
             this.txtRg.Name = "txtRg";
             this.txtRg.Size = new System.Drawing.Size(143, 20);
-            this.txtRg.TabIndex = 11;
+            this.txtRg.TabIndex = 22;
             // 
             // label22
             // 
@@ -774,7 +775,7 @@
             this.dtpDataEmissão.Location = new System.Drawing.Point(490, 28);
             this.dtpDataEmissão.Name = "dtpDataEmissão";
             this.dtpDataEmissão.Size = new System.Drawing.Size(149, 20);
-            this.dtpDataEmissão.TabIndex = 9;
+            this.dtpDataEmissão.TabIndex = 20;
             // 
             // label21
             // 
@@ -792,7 +793,7 @@
             this.comboEstadoCarteira.Location = new System.Drawing.Point(284, 30);
             this.comboEstadoCarteira.Name = "comboEstadoCarteira";
             this.comboEstadoCarteira.Size = new System.Drawing.Size(195, 21);
-            this.comboEstadoCarteira.TabIndex = 7;
+            this.comboEstadoCarteira.TabIndex = 19;
             // 
             // label20
             // 
@@ -809,7 +810,7 @@
             this.txtSerie.Location = new System.Drawing.Point(191, 31);
             this.txtSerie.Name = "txtSerie";
             this.txtSerie.Size = new System.Drawing.Size(83, 20);
-            this.txtSerie.TabIndex = 5;
+            this.txtSerie.TabIndex = 18;
             // 
             // label19
             // 
@@ -826,7 +827,7 @@
             this.txtCarteira.Location = new System.Drawing.Point(12, 31);
             this.txtCarteira.Name = "txtCarteira";
             this.txtCarteira.Size = new System.Drawing.Size(164, 20);
-            this.txtCarteira.TabIndex = 3;
+            this.txtCarteira.TabIndex = 17;
             // 
             // label18
             // 
@@ -844,7 +845,7 @@
             this.mtbCpf.Mask = "###,###,###-##";
             this.mtbCpf.Name = "mtbCpf";
             this.mtbCpf.Size = new System.Drawing.Size(143, 20);
-            this.mtbCpf.TabIndex = 1;
+            this.mtbCpf.TabIndex = 21;
             // 
             // label17
             // 
@@ -893,7 +894,7 @@
             this.checkBox2.Location = new System.Drawing.Point(17, 35);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(120, 20);
-            this.checkBox2.TabIndex = 16;
+            this.checkBox2.TabIndex = 35;
             this.checkBox2.Text = "Banco de Horas ";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
@@ -904,7 +905,7 @@
             this.checkBox3.Location = new System.Drawing.Point(161, 35);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(91, 20);
-            this.checkBox3.TabIndex = 17;
+            this.checkBox3.TabIndex = 36;
             this.checkBox3.Text = "Hora Extra ";
             this.checkBox3.UseVisualStyleBackColor = true;
             // 
@@ -914,7 +915,7 @@
             this.comboJornada.Location = new System.Drawing.Point(13, 138);
             this.comboJornada.Name = "comboJornada";
             this.comboJornada.Size = new System.Drawing.Size(617, 21);
-            this.comboJornada.TabIndex = 15;
+            this.comboJornada.TabIndex = 34;
             // 
             // label39
             // 
@@ -944,7 +945,7 @@
             this.comboFuncao.Location = new System.Drawing.Point(13, 85);
             this.comboFuncao.Name = "comboFuncao";
             this.comboFuncao.Size = new System.Drawing.Size(617, 21);
-            this.comboFuncao.TabIndex = 10;
+            this.comboFuncao.TabIndex = 33;
             // 
             // comboDepartamento
             // 
@@ -952,7 +953,7 @@
             this.comboDepartamento.Location = new System.Drawing.Point(13, 30);
             this.comboDepartamento.Name = "comboDepartamento";
             this.comboDepartamento.Size = new System.Drawing.Size(617, 21);
-            this.comboDepartamento.TabIndex = 9;
+            this.comboDepartamento.TabIndex = 32;
             // 
             // label37
             // 
@@ -980,12 +981,13 @@
             this.btnSalvar.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
             this.btnSalvar.FlatAppearance.BorderSize = 2;
             this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalvar.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.Image = ((System.Drawing.Image)(resources.GetObject("btnSalvar.Image")));
             this.btnSalvar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSalvar.Location = new System.Drawing.Point(135, 399);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(114, 40);
-            this.btnSalvar.TabIndex = 30;
+            this.btnSalvar.TabIndex = 38;
             this.btnSalvar.Text = "SALVAR";
             this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
@@ -996,12 +998,13 @@
             this.btnLocalizar.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
             this.btnLocalizar.FlatAppearance.BorderSize = 2;
             this.btnLocalizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLocalizar.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLocalizar.Image = ((System.Drawing.Image)(resources.GetObject("btnLocalizar.Image")));
             this.btnLocalizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLocalizar.Location = new System.Drawing.Point(496, 399);
             this.btnLocalizar.Name = "btnLocalizar";
             this.btnLocalizar.Size = new System.Drawing.Size(114, 40);
-            this.btnLocalizar.TabIndex = 29;
+            this.btnLocalizar.TabIndex = 41;
             this.btnLocalizar.Text = "LOCALIZAR";
             this.btnLocalizar.UseVisualStyleBackColor = false;
             // 
@@ -1011,12 +1014,13 @@
             this.btnExcluir.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
             this.btnExcluir.FlatAppearance.BorderSize = 2;
             this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExcluir.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluir.Image")));
             this.btnExcluir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExcluir.Location = new System.Drawing.Point(375, 399);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(114, 40);
-            this.btnExcluir.TabIndex = 28;
+            this.btnExcluir.TabIndex = 40;
             this.btnExcluir.Text = "EXCLUIR";
             this.btnExcluir.UseVisualStyleBackColor = false;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
@@ -1027,12 +1031,13 @@
             this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
             this.btnCancelar.FlatAppearance.BorderSize = 2;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCancelar.Location = new System.Drawing.Point(255, 399);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(114, 40);
-            this.btnCancelar.TabIndex = 27;
+            this.btnCancelar.TabIndex = 39;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -1044,12 +1049,13 @@
             this.btNovo.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
             this.btNovo.FlatAppearance.BorderSize = 2;
             this.btNovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btNovo.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btNovo.Image = ((System.Drawing.Image)(resources.GetObject("btNovo.Image")));
             this.btNovo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btNovo.Location = new System.Drawing.Point(16, 399);
             this.btNovo.Name = "btNovo";
             this.btNovo.Size = new System.Drawing.Size(114, 40);
-            this.btNovo.TabIndex = 26;
+            this.btNovo.TabIndex = 37;
             this.btNovo.Text = "NOVO";
             this.btNovo.UseVisualStyleBackColor = false;
             this.btNovo.Click += new System.EventHandler(this.btNovo_Click);
@@ -1067,10 +1073,11 @@
             this.Controls.Add(this.btNovo);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimizeBox = false;
             this.Name = "FormFuncionario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Funcionario";
+            this.Text = "Cadastro de Funcionario";
             this.tabControl1.ResumeLayout(false);
             this.dadosPessoais.ResumeLayout(false);
             this.dadosPessoais.PerformLayout();

@@ -130,5 +130,10 @@ namespace Projeto
                 Habilitar();
             }
         }
+
+        private void FormDepartamento_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -136,5 +136,10 @@ namespace Projeto
                 Habilitar();
             }
         }
+
+        private void txtIdEscolaridade_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

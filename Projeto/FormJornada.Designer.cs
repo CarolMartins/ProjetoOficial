@@ -52,12 +52,6 @@
             this.mtbSaida2 = new System.Windows.Forms.MaskedTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.dgvJornada = new System.Windows.Forms.DataGridView();
-            this.label8 = new System.Windows.Forms.Label();
-            this.btnSalvar = new System.Windows.Forms.Button();
-            this.btnExcluir = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnNovo = new System.Windows.Forms.Button();
-            this.txtJornadaTotal = new System.Windows.Forms.TextBox();
             this.codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descricao = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.entrada1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -69,6 +63,12 @@
             this.sabado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.domingo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.indeterminado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label8 = new System.Windows.Forms.Label();
+            this.btnSalvar = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnNovo = new System.Windows.Forms.Button();
+            this.txtJornadaTotal = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvJornada)).BeginInit();
@@ -89,14 +89,14 @@
             this.txtIDJornada.Location = new System.Drawing.Point(16, 30);
             this.txtIDJornada.Name = "txtIDJornada";
             this.txtIDJornada.Size = new System.Drawing.Size(54, 20);
-            this.txtIDJornada.TabIndex = 1;
+            this.txtIDJornada.TabIndex = 0;
             // 
             // txtDescricaoJornada
             // 
             this.txtDescricaoJornada.Location = new System.Drawing.Point(75, 30);
             this.txtDescricaoJornada.Name = "txtDescricaoJornada";
             this.txtDescricaoJornada.Size = new System.Drawing.Size(296, 20);
-            this.txtDescricaoJornada.TabIndex = 3;
+            this.txtDescricaoJornada.TabIndex = 1;
             // 
             // label2
             // 
@@ -172,7 +172,7 @@
             this.ckbDomingo.Location = new System.Drawing.Point(355, 25);
             this.ckbDomingo.Name = "ckbDomingo";
             this.ckbDomingo.Size = new System.Drawing.Size(77, 20);
-            this.ckbDomingo.TabIndex = 7;
+            this.ckbDomingo.TabIndex = 12;
             this.ckbDomingo.Text = "Domingo";
             this.ckbDomingo.UseVisualStyleBackColor = true;
             // 
@@ -182,7 +182,7 @@
             this.ckbSabado.Location = new System.Drawing.Point(244, 68);
             this.ckbSabado.Name = "ckbSabado";
             this.ckbSabado.Size = new System.Drawing.Size(70, 20);
-            this.ckbSabado.TabIndex = 6;
+            this.ckbSabado.TabIndex = 11;
             this.ckbSabado.Text = "Sabádo";
             this.ckbSabado.UseVisualStyleBackColor = true;
             // 
@@ -192,7 +192,7 @@
             this.ckbSexta.Location = new System.Drawing.Point(244, 29);
             this.ckbSexta.Name = "ckbSexta";
             this.ckbSexta.Size = new System.Drawing.Size(93, 20);
-            this.ckbSexta.TabIndex = 5;
+            this.ckbSexta.TabIndex = 10;
             this.ckbSexta.Text = "Sexta-Feira";
             this.ckbSexta.UseVisualStyleBackColor = true;
             // 
@@ -202,7 +202,7 @@
             this.ckbQuinta.Location = new System.Drawing.Point(129, 68);
             this.ckbQuinta.Name = "ckbQuinta";
             this.ckbQuinta.Size = new System.Drawing.Size(98, 20);
-            this.ckbQuinta.TabIndex = 4;
+            this.ckbQuinta.TabIndex = 9;
             this.ckbQuinta.Text = "Quinta-Feira";
             this.ckbQuinta.UseVisualStyleBackColor = true;
             // 
@@ -212,7 +212,7 @@
             this.ckbQuarta.Location = new System.Drawing.Point(129, 29);
             this.ckbQuarta.Name = "ckbQuarta";
             this.ckbQuarta.Size = new System.Drawing.Size(100, 20);
-            this.ckbQuarta.TabIndex = 3;
+            this.ckbQuarta.TabIndex = 8;
             this.ckbQuarta.Text = "Quarta-Feira";
             this.ckbQuarta.UseVisualStyleBackColor = true;
             // 
@@ -222,7 +222,7 @@
             this.ckbTerca.Location = new System.Drawing.Point(8, 68);
             this.ckbTerca.Name = "ckbTerca";
             this.ckbTerca.Size = new System.Drawing.Size(91, 20);
-            this.ckbTerca.TabIndex = 2;
+            this.ckbTerca.TabIndex = 7;
             this.ckbTerca.Text = "Terça-feira";
             this.ckbTerca.UseVisualStyleBackColor = true;
             // 
@@ -232,7 +232,7 @@
             this.ckbSegunda.Location = new System.Drawing.Point(8, 29);
             this.ckbSegunda.Name = "ckbSegunda";
             this.ckbSegunda.Size = new System.Drawing.Size(111, 20);
-            this.ckbSegunda.TabIndex = 1;
+            this.ckbSegunda.TabIndex = 6;
             this.ckbSegunda.Text = "Segunda-Feira";
             this.ckbSegunda.UseVisualStyleBackColor = true;
             // 
@@ -242,7 +242,7 @@
             this.ckbIndeterminado.Location = new System.Drawing.Point(355, 71);
             this.ckbIndeterminado.Name = "ckbIndeterminado";
             this.ckbIndeterminado.Size = new System.Drawing.Size(110, 20);
-            this.ckbIndeterminado.TabIndex = 0;
+            this.ckbIndeterminado.TabIndex = 13;
             this.ckbIndeterminado.Text = "Indeterminado";
             this.ckbIndeterminado.UseVisualStyleBackColor = true;
             // 
@@ -252,7 +252,7 @@
             this.mtbEntrada1.Mask = "00:00";
             this.mtbEntrada1.Name = "mtbEntrada1";
             this.mtbEntrada1.Size = new System.Drawing.Size(53, 20);
-            this.mtbEntrada1.TabIndex = 13;
+            this.mtbEntrada1.TabIndex = 2;
             this.mtbEntrada1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.mtbEntrada1.ValidatingType = typeof(System.DateTime);
             // 
@@ -262,7 +262,7 @@
             this.mtbSaida1.Mask = "00:00";
             this.mtbSaida1.Name = "mtbSaida1";
             this.mtbSaida1.Size = new System.Drawing.Size(53, 20);
-            this.mtbSaida1.TabIndex = 14;
+            this.mtbSaida1.TabIndex = 3;
             this.mtbSaida1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.mtbSaida1.ValidatingType = typeof(System.DateTime);
             // 
@@ -272,7 +272,7 @@
             this.mtbEntrada2.Mask = "00:00";
             this.mtbEntrada2.Name = "mtbEntrada2";
             this.mtbEntrada2.Size = new System.Drawing.Size(53, 20);
-            this.mtbEntrada2.TabIndex = 15;
+            this.mtbEntrada2.TabIndex = 4;
             this.mtbEntrada2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.mtbEntrada2.ValidatingType = typeof(System.DateTime);
             // 
@@ -282,7 +282,7 @@
             this.mtbSaida2.Mask = "00:00";
             this.mtbSaida2.Name = "mtbSaida2";
             this.mtbSaida2.Size = new System.Drawing.Size(53, 20);
-            this.mtbSaida2.TabIndex = 16;
+            this.mtbSaida2.TabIndex = 5;
             this.mtbSaida2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.mtbSaida2.ValidatingType = typeof(System.DateTime);
             // 
@@ -317,95 +317,9 @@
             this.dgvJornada.Name = "dgvJornada";
             this.dgvJornada.ReadOnly = true;
             this.dgvJornada.Size = new System.Drawing.Size(601, 150);
-            this.dgvJornada.TabIndex = 19;
+            this.dgvJornada.TabIndex = 15;
             this.dgvJornada.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvJornada_CellContentDoubleClick);
             this.dgvJornada.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvJornada_CellDoubleClick);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(525, 126);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(58, 16);
-            this.label8.TabIndex = 20;
-            this.label8.Text = "Semanal";
-            // 
-            // btnSalvar
-            // 
-            this.btnSalvar.BackColor = System.Drawing.Color.Honeydew;
-            this.btnSalvar.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
-            this.btnSalvar.FlatAppearance.BorderSize = 2;
-            this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalvar.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvar.Image = ((System.Drawing.Image)(resources.GetObject("btnSalvar.Image")));
-            this.btnSalvar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalvar.Location = new System.Drawing.Point(131, 377);
-            this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(114, 40);
-            this.btnSalvar.TabIndex = 25;
-            this.btnSalvar.Text = "SALVAR";
-            this.btnSalvar.UseVisualStyleBackColor = false;
-            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
-            // 
-            // btnExcluir
-            // 
-            this.btnExcluir.BackColor = System.Drawing.Color.Honeydew;
-            this.btnExcluir.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
-            this.btnExcluir.FlatAppearance.BorderSize = 2;
-            this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExcluir.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluir.Image")));
-            this.btnExcluir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExcluir.Location = new System.Drawing.Point(371, 377);
-            this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(114, 40);
-            this.btnExcluir.TabIndex = 23;
-            this.btnExcluir.Text = "EXCLUIR";
-            this.btnExcluir.UseVisualStyleBackColor = false;
-            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.BackColor = System.Drawing.Color.Honeydew;
-            this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
-            this.btnCancelar.FlatAppearance.BorderSize = 2;
-            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
-            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(251, 377);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(114, 40);
-            this.btnCancelar.TabIndex = 22;
-            this.btnCancelar.Text = "CANCELAR";
-            this.btnCancelar.UseVisualStyleBackColor = false;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
-            // btnNovo
-            // 
-            this.btnNovo.BackColor = System.Drawing.Color.Honeydew;
-            this.btnNovo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnNovo.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
-            this.btnNovo.FlatAppearance.BorderSize = 2;
-            this.btnNovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNovo.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNovo.Image = ((System.Drawing.Image)(resources.GetObject("btnNovo.Image")));
-            this.btnNovo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNovo.Location = new System.Drawing.Point(12, 377);
-            this.btnNovo.Name = "btnNovo";
-            this.btnNovo.Size = new System.Drawing.Size(114, 40);
-            this.btnNovo.TabIndex = 21;
-            this.btnNovo.Text = "NOVO";
-            this.btnNovo.UseVisualStyleBackColor = false;
-            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
-            // 
-            // txtJornadaTotal
-            // 
-            this.txtJornadaTotal.Location = new System.Drawing.Point(514, 149);
-            this.txtJornadaTotal.Name = "txtJornadaTotal";
-            this.txtJornadaTotal.Size = new System.Drawing.Size(80, 20);
-            this.txtJornadaTotal.TabIndex = 26;
             // 
             // codigo
             // 
@@ -486,6 +400,92 @@
             this.indeterminado.ReadOnly = true;
             this.indeterminado.Width = 80;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(525, 126);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(58, 16);
+            this.label8.TabIndex = 20;
+            this.label8.Text = "Semanal";
+            // 
+            // btnSalvar
+            // 
+            this.btnSalvar.BackColor = System.Drawing.Color.Honeydew;
+            this.btnSalvar.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
+            this.btnSalvar.FlatAppearance.BorderSize = 2;
+            this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalvar.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvar.Image = ((System.Drawing.Image)(resources.GetObject("btnSalvar.Image")));
+            this.btnSalvar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSalvar.Location = new System.Drawing.Point(131, 377);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(114, 40);
+            this.btnSalvar.TabIndex = 17;
+            this.btnSalvar.Text = "SALVAR";
+            this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            // 
+            // btnExcluir
+            // 
+            this.btnExcluir.BackColor = System.Drawing.Color.Honeydew;
+            this.btnExcluir.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
+            this.btnExcluir.FlatAppearance.BorderSize = 2;
+            this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExcluir.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluir.Image")));
+            this.btnExcluir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExcluir.Location = new System.Drawing.Point(371, 377);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(114, 40);
+            this.btnExcluir.TabIndex = 19;
+            this.btnExcluir.Text = "EXCLUIR";
+            this.btnExcluir.UseVisualStyleBackColor = false;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.BackColor = System.Drawing.Color.Honeydew;
+            this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
+            this.btnCancelar.FlatAppearance.BorderSize = 2;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
+            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelar.Location = new System.Drawing.Point(251, 377);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(114, 40);
+            this.btnCancelar.TabIndex = 18;
+            this.btnCancelar.Text = "CANCELAR";
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // btnNovo
+            // 
+            this.btnNovo.BackColor = System.Drawing.Color.Honeydew;
+            this.btnNovo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnNovo.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
+            this.btnNovo.FlatAppearance.BorderSize = 2;
+            this.btnNovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNovo.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNovo.Image = ((System.Drawing.Image)(resources.GetObject("btnNovo.Image")));
+            this.btnNovo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNovo.Location = new System.Drawing.Point(12, 377);
+            this.btnNovo.Name = "btnNovo";
+            this.btnNovo.Size = new System.Drawing.Size(114, 40);
+            this.btnNovo.TabIndex = 16;
+            this.btnNovo.Text = "NOVO";
+            this.btnNovo.UseVisualStyleBackColor = false;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
+            // 
+            // txtJornadaTotal
+            // 
+            this.txtJornadaTotal.Location = new System.Drawing.Point(514, 149);
+            this.txtJornadaTotal.Name = "txtJornadaTotal";
+            this.txtJornadaTotal.Size = new System.Drawing.Size(80, 20);
+            this.txtJornadaTotal.TabIndex = 14;
+            // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(421, 39);
@@ -522,9 +522,10 @@
             this.Controls.Add(this.txtIDJornada);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormJornada";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormJornada";
+            this.Text = "Jornada de Trabalho";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvJornada)).EndInit();
